@@ -180,7 +180,7 @@
     // — case page: ordered blocks (any count, any order) —
     const bb = document.querySelector('[data-blocks]');
     if (bb) {
-      const arr = (C.caseTavitas && C.caseTavitas.blocks) || [];
+      const arr = (C.case && C.case.blocks) || [];
       bb.innerHTML = '';
       arr.forEach(b => {
         if (b.type === 'image') {
@@ -205,14 +205,14 @@
     // — case live link —
     const live = document.querySelector('[data-live]');
     if (live) {
-      live.href = get('caseTavitas.meta.liveUrl') || '#';
-      live.textContent = get('caseTavitas.meta.liveLabel') || 'Preview +';
+      live.href = get('case.meta.liveUrl') || '#';
+      live.textContent = get('case.meta.liveLabel') || 'Preview +';
     }
 
     // — more-projects cards —
     const mb = document.querySelector('[data-more]');
     if (mb) {
-      const arr = (C.caseTavitas && C.caseTavitas.more) || [];
+      const arr = (C.case && C.case.more) || [];
       mb.innerHTML = '';
       arr.forEach((m, i) => {
         const a = document.createElement('a');
@@ -277,9 +277,12 @@
     projects: 'content/projects.json',
     services: 'content/services.json',
     contact: 'content/contact.json',
-    caseTavitas: 'content/case-tavitas.json',
     footer: 'content/footer.json'
   };
+
+  // case pages declare their own content file: <body data-case-file="content/case-xxx.json">
+  const caseFile = document.body.dataset.caseFile;
+  if (caseFile) FILES.case = caseFile;
 
   Promise.all(Object.entries(FILES).map(([key, path]) =>
     fetch(path).then(r => { if (!r.ok) throw new Error(path); return r.json(); }).then(v => [key, v])
