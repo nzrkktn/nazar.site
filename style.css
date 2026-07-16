@@ -78,10 +78,9 @@ img { display: block; max-width: 100%; }
   top: 26px; left: 30px;
   z-index: 4;
   font-size: clamp(1.15rem, 1.6vw, 1.5rem);
-  font-style: italic;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: #6f8dff; /* lighter accent tint for legibility on dark/photo panels */
+  color: #4d7dff;
 }
 
 .content {
@@ -110,7 +109,7 @@ img { display: block; max-width: 100%; }
   transition: background 0.25s var(--ease), color 0.25s var(--ease);
 }
 .topnav a:hover { color: var(--ink); }
-.topnav a[aria-current="page"] { background: color-mix(in srgb, var(--accent) 12%, var(--pill-active)); color: var(--ink); }
+.topnav a[aria-current="page"] { background: none; color: #1601fc; font-weight: 600; }
 
 .theme-btn {
   width: 38px; height: 38px;
@@ -186,9 +185,9 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
 
 /* ——————— HERO (home) ——————— */
 
-.hero-block { margin-top: auto; margin-bottom: auto; }
-.hero-block .badge { margin-bottom: 30px; }
-.hero-block h1 { margin-bottom: 40px; max-width: 12em; }
+.hero-block { margin-top: 4vh; margin-bottom: auto; }
+.hero-block .badge { margin-bottom: 44px; }
+.hero-block h1 { margin-bottom: 56px; max-width: 12em; }
 
 /* ——————— SLIDER (left panel) ——————— */
 
@@ -243,7 +242,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   z-index: 4;
   display: flex; gap: 8px;
 }
-.dot { width: 26px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.35); border:0; cursor:pointer; padding:0; transition: background 0.3s; }
+.dot { width: 26px; height: 4px; border-radius: 4px; background: rgba(22,1,252,0.32); border:0; cursor:pointer; padding:0; transition: background 0.3s; }
 .dot.active { background: #1601fc; }
 
 /* ——————— ABOUT ——————— */
