@@ -1,0 +1,328 @@
+media:
+  input: images
+  output: /images
+  categories: [image]
+
+content:
+  - name: site
+    label: Загальне — ім'я, email, соцмережі
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Ім'я (лого скрізь)
+        type: string
+        required: true
+      - name: email
+        label: Email
+        type: string
+      - name: instagram
+        label: Instagram — нік
+        type: string
+      - name: instagramUrl
+        label: Instagram — посилання
+        type: string
+      - name: copyright
+        label: Копірайт унизу сторінок
+        type: string
+      - name: booking
+        label: Зелений бейдж на головній
+        type: string
+
+  - name: slides
+    label: Слайдер робіт (ліва панель)
+    type: file
+    path: content/slides.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Назва проєкту
+        type: string
+      - name: category
+        label: Категорія
+        type: string
+      - name: image
+        label: Зображення
+        type: image
+
+  - name: home
+    label: Головна
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: headline
+        label: Заголовок
+        type: text
+      - name: accentWord
+        label: Сіре слово в кінці заголовка
+        description: Порожньо — заголовок без сірого слова
+        type: string
+      - name: cta1
+        label: Кнопка 1 (чорна)
+        type: string
+      - name: cta2
+        label: Кнопка 2 (сіра)
+        type: string
+
+  - name: about
+    label: Про мене
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+      - name: text
+        label: Текст
+        description: Порожній рядок — новий абзац. Абзаців може бути скільки завгодно.
+        type: text
+      - name: tags
+        label: Теги на фото (до 3)
+        type: string
+        list:
+          max: 3
+      - name: quote
+        label: Цитата внизу фото
+        type: text
+      - name: photo
+        label: Фото
+        type: image
+      - name: signature
+        label: Підпис
+        type: string
+      - name: cta
+        label: Кнопка
+        type: string
+
+  - name: projects
+    label: Проєкти
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+      - name: lede
+        label: Підзаголовок
+        type: text
+      - name: list
+        label: Список проєктів
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({year})"
+        fields:
+          - name: name
+            label: Назва
+            type: string
+          - name: category
+            label: Категорія
+            type: string
+          - name: year
+            label: Рік
+            type: string
+          - name: url
+            label: Посилання (сторінка кейсу або "#")
+            type: string
+          - name: isNew
+            label: Позначка «New»
+            type: boolean
+
+  - name: services
+    label: Послуги та прайс
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+      - name: lede
+        label: Підзаголовок
+        type: text
+      - name: tiers
+        label: Пакети
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} — {price}"
+        fields:
+          - name: flag
+            label: Плашка над назвою
+            description: Напр. «Most chosen». Порожньо — без плашки.
+            type: string
+          - name: name
+            label: Назва
+            type: string
+          - name: price
+            label: Ціна
+            type: string
+          - name: forWho
+            label: Для кого
+            type: text
+          - name: features
+            label: Пункти пакета
+            type: object
+            list: true
+            fields:
+              - name: text
+                label: Текст
+                type: text
+              - name: highlight
+                label: Виділити жирним (стратегія)
+                type: boolean
+          - name: button
+            label: Кнопка
+            type: string
+          - name: hero
+            label: Герой-пакет (синя рамка)
+            type: boolean
+      - name: rules
+        label: Правила під прайсом
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Заголовок
+            type: string
+          - name: text
+            label: Текст
+            type: text
+
+  - name: contact
+    label: Контакт
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+      - name: lede
+        label: Підзаголовок
+        type: text
+      - name: basedIn
+        label: Локація (на панелі)
+        type: string
+      - name: responseNote
+        label: Напис біля кнопки
+        type: string
+      - name: image
+        label: Зображення панелі
+        type: image
+
+  - name: case_tavitas
+    label: Кейс — Tavita's Touch
+    type: file
+    path: content/case-tavitas.json
+    format: json
+    fields:
+      - name: title
+        label: Назва
+        type: string
+      - name: intro
+        label: Інтро (зліва, під назвою)
+        description: Порожній рядок — новий абзац.
+        type: text
+      - name: meta
+        label: Мета-таблиця
+        type: object
+        fields:
+          - name: year
+            label: Year
+            type: string
+          - name: scope
+            label: Scope
+            type: string
+          - name: timeline
+            label: Timeline
+            type: string
+          - name: liveLabel
+            label: Текст посилання Live
+            type: string
+          - name: liveUrl
+            label: URL посилання Live
+            type: string
+      - name: blocks
+        label: Контент справа (блоки)
+        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
+        type: block
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {heading}"
+        blockKey: type
+        blocks:
+          - name: text
+            label: Текстова секція
+            fields:
+              - name: heading
+                label: Заголовок секції
+                type: string
+              - name: text
+                label: Текст
+                description: Порожній рядок — новий абзац.
+                type: text
+          - name: image
+            label: Зображення
+            fields:
+              - name: image
+                label: Файл
+                type: image
+              - name: size
+                label: Формат
+                type: select
+                options:
+                  values:
+                    - value: tall
+                      label: Вертикальне (4:5)
+                    - value: wide
+                      label: Широке (16:10)
+                    - value: square
+                      label: Квадрат (1:1)
+      - name: more
+        label: More projects (внизу)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Назва
+            type: string
+          - name: category
+            label: Категорія
+            type: string
+          - name: url
+            label: Посилання
+            type: string
+          - name: image
+            label: Зображення
+            type: image
+
+  - name: footer
+    label: Великий футер (кейс)
+    type: file
+    path: content/footer.json
+    format: json
+    fields:
+      - name: headline
+        label: Заголовок (чорна частина)
+        type: string
+      - name: sub
+        label: Сіра частина
+        type: string
+      - name: cta
+        label: Кнопка
+        type: string
