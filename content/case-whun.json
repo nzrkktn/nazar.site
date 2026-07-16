@@ -1,0 +1,26 @@
+{
+  "title": "WHUN",
+  "intro": "[ Intro — one honest paragraph. Who WHUN is, what they came with, what they wanted. ]",
+  "meta": {
+    "year": "2026",
+    "scope": "Positioning, Brand identity",
+    "timeline": "[ X weeks ]",
+    "liveLabel": "Preview +",
+    "liveUrl": "#"
+  },
+  "blocks": [
+    { "type": "image", "image": "", "size": "tall" },
+    { "type": "text",  "heading": "The problem",  "text": "[ What wasn't working — in plain language. ]" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "text",  "heading": "The strategy", "text": "[ The thinking before the visuals — Discovery & Positioning. ]" },
+    { "type": "image", "image": "", "size": "tall" },
+    { "type": "text",  "heading": "The solution", "text": "[ What was built, where it lives, how it works in the real world. ]" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "image", "image": "", "size": "square" },
+    { "type": "image", "image": "", "size": "wide" }
+  ],
+  "more": [
+    { "name": "Cranston Bible Chapel", "category": "Brand identity", "url": "cranston-bible-chapel.html", "image": "" },
+    { "name": "Ant Sport Health Academy", "category": "Brand identity", "url": "ant-sport-health-academy.html", "image": "" }
+  ]
+}
