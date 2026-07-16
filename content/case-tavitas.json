@@ -9,18 +9,57 @@
     "liveUrl": "#"
   },
   "blocks": [
-    { "type": "image", "image": "images/tt cup.png", "size": "tall" },
-    { "type": "text",  "heading": "The problem",  "text": "[ What wasn't working — in plain language. The business was good; the way it looked wasn't telling that story. ]" },
-    { "type": "image", "image": "", "size": "wide" },
-    { "type": "text",  "heading": "The strategy", "text": "[ The thinking before the visuals — Discovery & Positioning. What direction was chosen and why. One or two paragraphs, no jargon. ]" },
-    { "type": "image", "image": "", "size": "tall" },
-    { "type": "text",  "heading": "The solution", "text": "[ What was built: the identity system, where it lives, how it works in the real world. The logo appears here — earned by everything above it. ]" },
-    { "type": "image", "image": "", "size": "wide" },
-    { "type": "image", "image": "", "size": "square" },
-    { "type": "image", "image": "", "size": "wide" }
+    {
+      "type": "image",
+      "image": "/images/ChatGPT Image Jul 14 2026 (1)-1.png",
+      "size": "tall"
+    },
+    {
+      "type": "text",
+      "heading": "The problem",
+      "text": "[ What wasn't working — in plain language. The business was good; the way it looked wasn't telling that story. ]"
+    },
+    {
+      "type": "image",
+      "size": "wide"
+    },
+    {
+      "type": "text",
+      "heading": "The strategy",
+      "text": "[ The thinking before the visuals — Discovery & Positioning. What direction was chosen and why. One or two paragraphs, no jargon. ]"
+    },
+    {
+      "type": "image",
+      "size": "tall"
+    },
+    {
+      "type": "text",
+      "heading": "The solution",
+      "text": "[ What was built: the identity system, where it lives, how it works in the real world. The logo appears here — earned by everything above it. ]"
+    },
+    {
+      "type": "image",
+      "size": "wide"
+    },
+    {
+      "type": "image",
+      "size": "square"
+    },
+    {
+      "type": "image",
+      "size": "wide"
+    }
   ],
   "more": [
-    { "name": "Peixôu",   "category": "Positioning & identity", "url": "#", "image": "" },
-    { "name": "Studio 4", "category": "Branding",               "url": "#", "image": "" }
+    {
+      "name": "Peixôu",
+      "category": "Positioning & identity",
+      "url": "#"
+    },
+    {
+      "name": "Studio 4",
+      "category": "Branding",
+      "url": "#"
+    }
   ]
 }
