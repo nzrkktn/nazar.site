@@ -1,0 +1,68 @@
+{
+  "title": "Services & pricing",
+  "lede": "Every project starts with thinking, not decoration. You pay for two things: a point of view and the form that carries it. Pick where you want to start.",
+  "tiers": [
+    {
+      "flag": "Start here",
+      "name": "Positioning Sprint",
+      "price": "$750",
+      "forWho": "For owners still deciding. Diagnosis only — no design.",
+      "features": [
+        { "text": "Business, audience & competitor breakdown", "highlight": false },
+        { "text": "Positioning document — \"the only ___ that ___\"", "highlight": true },
+        { "text": "Clear recommendations to act on", "highlight": false },
+        { "text": "Credited fully toward any package", "highlight": false }
+      ],
+      "button": "Start a sprint",
+      "hero": false
+    },
+    {
+      "flag": "",
+      "name": "Essential",
+      "price": "$2,200",
+      "forWho": "For those who need to launch quickly.",
+      "features": [
+        { "text": "Logo system — main, simplified, favicon", "highlight": false },
+        { "text": "Colour & typography", "highlight": false },
+        { "text": "Short diagnosis in the brief", "highlight": false },
+        { "text": "Mini brand guide + all files", "highlight": false }
+      ],
+      "button": "Choose Essential",
+      "hero": false
+    },
+    {
+      "flag": "Most chosen",
+      "name": "Identity",
+      "price": "$4,200",
+      "forWho": "The core package — strategy and design, in full.",
+      "features": [
+        { "text": "Everything in Essential", "highlight": false },
+        { "text": "Full Discovery & Positioning", "highlight": true },
+        { "text": "Extended identity — patterns, graphic elements, spacing rules", "highlight": false },
+        { "text": "Complete brand guide", "highlight": false },
+        { "text": "Applied to 3–4 touchpoints", "highlight": false }
+      ],
+      "button": "Choose Identity",
+      "hero": true
+    },
+    {
+      "flag": "",
+      "name": "Complete",
+      "price": "$7,500",
+      "forWho": "For entering the market seriously.",
+      "features": [
+        { "text": "Everything in Identity", "highlight": false },
+        { "text": "Tone of voice & key messaging", "highlight": false },
+        { "text": "6–8 touchpoints + social templates", "highlight": false },
+        { "text": "30 days of post-launch support", "highlight": false }
+      ],
+      "button": "Choose Complete",
+      "hero": false
+    }
+  ],
+  "rules": [
+    { "title": "Two revision rounds", "text": "Every package includes two rounds of edits. Beyond that, $250 per round — so scope stays clear, not open-ended." },
+    { "title": "50% upfront", "text": "Half to begin, half on delivery. Always. It keeps both of us committed to the work." },
+    { "title": "Strategy is a line item", "text": "Discovery & Positioning appears as its own value in your proposal — never a hidden bonus. You see what you're paying for." }
+  ]
+}

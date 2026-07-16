@@ -1,0 +1,26 @@
+{
+  "title": "Tavita's Touch",
+  "intro": "[ Intro — one honest paragraph, from the existing Tavita's Touch copy. Who the client is, what they came with, what they wanted. ]",
+  "meta": {
+    "year": "07.25",
+    "scope": "Positioning, Brand identity",
+    "timeline": "9 weeks",
+    "liveLabel": "Preview +",
+    "liveUrl": "#"
+  },
+  "blocks": [
+    { "type": "image", "image": "images/tt cup.png", "size": "tall" },
+    { "type": "text",  "heading": "The problem",  "text": "[ What wasn't working — in plain language. The business was good; the way it looked wasn't telling that story. ]" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "text",  "heading": "The strategy", "text": "[ The thinking before the visuals — Discovery & Positioning. What direction was chosen and why. One or two paragraphs, no jargon. ]" },
+    { "type": "image", "image": "", "size": "tall" },
+    { "type": "text",  "heading": "The solution", "text": "[ What was built: the identity system, where it lives, how it works in the real world. The logo appears here — earned by everything above it. ]" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "image", "image": "", "size": "square" },
+    { "type": "image", "image": "", "size": "wide" }
+  ],
+  "more": [
+    { "name": "Peixôu",   "category": "Positioning & identity", "url": "#", "image": "" },
+    { "name": "Studio 4", "category": "Branding",               "url": "#", "image": "" }
+  ]
+}
