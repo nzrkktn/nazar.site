@@ -81,10 +81,11 @@ img { display: block; max-width: 100%; }
   font-style: italic;
   font-weight: 600;
   letter-spacing: -0.01em;
+  color: #6f8dff; /* lighter accent tint for legibility on dark/photo panels */
 }
 
 .content {
-  padding: clamp(28px, 4vw, 72px) var(--pad) clamp(60px, 8vw, 120px);
+  padding: clamp(28px, 4vw, 72px) var(--pad) clamp(20px, 2vw, 32px);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -109,7 +110,7 @@ img { display: block; max-width: 100%; }
   transition: background 0.25s var(--ease), color 0.25s var(--ease);
 }
 .topnav a:hover { color: var(--ink); }
-.topnav a[aria-current="page"] { background: var(--pill-active); color: var(--ink); }
+.topnav a[aria-current="page"] { background: color-mix(in srgb, var(--accent) 12%, var(--pill-active)); color: var(--ink); }
 
 .theme-btn {
   width: 38px; height: 38px;
@@ -178,8 +179,8 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   transition: transform 0.25s var(--ease), background 0.25s, color 0.25s;
 }
 .btn:active { transform: scale(0.97); }
-.btn.solid { background: var(--ink); color: var(--bg); }
-.btn.solid:hover { background: var(--accent); color: #fff; }
+.btn.solid { background: var(--accent); color: #fff; }
+.btn.solid:hover { background: #000; }
 .btn.soft { background: var(--pill-bg); color: var(--ink); }
 .btn.soft:hover { background: var(--pill-active); }
 
@@ -226,15 +227,14 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   width: 48px; height: 48px;
   border-radius: 999px;
   border: 0;
-  background: rgba(255,255,255,0.22);
-  backdrop-filter: blur(6px);
+  background: #1601fc;
   color: #fff;
   cursor: pointer;
   display: grid; place-items: center;
   font-size: 1.2rem;
   transition: background 0.25s;
 }
-.slider-arrow:hover { background: rgba(255,255,255,0.34); }
+.slider-arrow:hover { background: #3d2dff; }
 
 /* dots on their own row, below the caption */
 .dots {
@@ -244,7 +244,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   display: flex; gap: 8px;
 }
 .dot { width: 26px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.35); border:0; cursor:pointer; padding:0; transition: background 0.3s; }
-.dot.active { background: #fff; }
+.dot.active { background: #1601fc; }
 
 /* ——————— ABOUT ——————— */
 
