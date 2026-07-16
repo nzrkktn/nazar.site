@@ -1,10 +1,10 @@
 {
   "title": "Tavita's Touch",
-  "intro": "[ Intro — one honest paragraph, from the existing Tavita's Touch copy. Who the client is, what they came with, what they wanted. ]",
+  "intro": "A ceramics studio caught between two worlds — handmade warmth and machine-level precision. The identity had to hold both without choosing.",
   "meta": {
-    "year": "07.25",
+    "year": "2026",
     "scope": "Positioning, Brand identity",
-    "timeline": "9 weeks",
+    "timeline": "8 weeks",
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
@@ -17,25 +17,27 @@
     {
       "type": "text",
       "heading": "The problem",
-      "text": "[ What wasn't working — in plain language. The business was good; the way it looked wasn't telling that story. ]"
+      "text": "Handmade ceramics almost always look the same — earthy, rustic, \"cozy.\" Tavita's work isn't cozy. It's controlled."
     },
     {
       "type": "image",
+      "image": "/images/ChatGPT Image Jul 14 2026 from nzrkktn.png",
       "size": "wide"
     },
     {
       "type": "text",
-      "heading": "The strategy",
-      "text": "[ The thinking before the visuals — Discovery & Positioning. What direction was chosen and why. One or two paragraphs, no jargon. ]"
+      "heading": "The anchor",
+      "text": "Tavitaʼs perfectionism at the wheel became the brand's core truth: craft, taken further than craft usually goes."
     },
     {
       "type": "image",
+      "image": "/images/tt b.png",
       "size": "tall"
     },
     {
       "type": "text",
-      "heading": "The solution",
-      "text": "[ What was built: the identity system, where it lives, how it works in the real world. The logo appears here — earned by everything above it. ]"
+      "heading": "The mark",
+      "text": "Two T's, meeting like hands closing around clay. One continuous line — handmade in spirit, exact in form."
     },
     {
       "type": "image",
