@@ -1,19 +1,6 @@
 [
-  {
-    "title": "Tavita's Touch",
-    "category": "Brand identity",
-    "image": "/images/ChatGPT Image Jul 14 2026 (1).png"
-  },
-  {
-    "title": "Project Two",
-    "category": "Identity"
-  },
-  {
-    "title": "Project Three",
-    "category": "Branding"
-  },
-  {
-    "title": "Project Four",
-    "category": "Identity"
-  }
+  { "title": "Tavita's Touch",           "category": "Brand identity", "image": "images/tt cup.png" },
+  { "title": "WHUN",                     "category": "Brand identity", "image": "" },
+  { "title": "Cranston Bible Chapel",    "category": "Brand identity", "image": "" },
+  { "title": "Ant Sport Health Academy", "category": "Brand identity", "image": "" }
 ]
