@@ -221,6 +221,96 @@ content:
         label: Зображення панелі
         type: image
 
+  - name: case_tavitas
+    label: Кейс — Tavita's Touch
+    type: file
+    path: content/case-tavitas.json
+    format: json
+    fields:
+      - name: title
+        label: Назва
+        type: string
+      - name: intro
+        label: Інтро (зліва, під назвою)
+        description: Порожній рядок — новий абзац.
+        type: text
+      - name: meta
+        label: Мета-таблиця
+        type: object
+        fields:
+          - name: year
+            label: Year
+            type: string
+          - name: scope
+            label: Scope
+            type: string
+          - name: timeline
+            label: Timeline
+            type: string
+          - name: liveLabel
+            label: Текст посилання Live
+            type: string
+          - name: liveUrl
+            label: URL посилання Live
+            type: string
+      - name: blocks
+        label: Контент справа (блоки)
+        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
+        type: block
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {heading}"
+        blockKey: type
+        blocks:
+          - name: text
+            label: Текстова секція
+            fields:
+              - name: heading
+                label: Заголовок секції
+                type: string
+              - name: text
+                label: Текст
+                description: Порожній рядок — новий абзац.
+                type: text
+          - name: image
+            label: Зображення
+            fields:
+              - name: image
+                label: Файл
+                type: image
+              - name: size
+                label: Формат
+                type: select
+                options:
+                  values:
+                    - value: tall
+                      label: Вертикальне (4:5)
+                    - value: wide
+                      label: Широке (16:10)
+                    - value: square
+                      label: Квадрат (1:1)
+      - name: more
+        label: More projects (внизу)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Назва
+            type: string
+          - name: category
+            label: Категорія
+            type: string
+          - name: url
+            label: Посилання
+            type: string
+          - name: image
+            label: Зображення
+            type: image
+
   - name: case_whun
     label: Кейс — WHUN
     type: file
