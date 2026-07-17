@@ -2,9 +2,33 @@
   "title": "Projects",
   "lede": "A collection of brands I've built. Each one starts with a business problem and ends with an identity that earns attention.",
   "list": [
-    { "name": "Tavita's Touch",           "category": "Brand identity", "year": "2025", "url": "tavitas-touch.html",           "isNew": true },
-    { "name": "WHUN",                     "category": "Brand identity", "year": "2026", "url": "whun.html",                    "isNew": true },
-    { "name": "Cranston Bible Chapel",    "category": "Brand identity", "year": "2026", "url": "cranston-bible-chapel.html",   "isNew": true },
-    { "name": "Ant Sport Health Academy", "category": "Brand identity", "year": "2026", "url": "ant-sport-health-academy.html","isNew": true }
+    {
+      "name": "Tavita's Touch",
+      "category": "Brand identity",
+      "year": "2025",
+      "url": "tavitas-touch.html",
+      "isNew": true
+    },
+    {
+      "name": "WHUN",
+      "category": "Brand identity",
+      "year": "2026",
+      "url": "whun.html",
+      "isNew": false
+    },
+    {
+      "name": "Cranston Bible Chapel",
+      "category": "Brand identity",
+      "year": "2026",
+      "url": "cranston-bible-chapel.html",
+      "isNew": false
+    },
+    {
+      "name": "Ant Sport Health Academy",
+      "category": "Brand identity",
+      "year": "2026",
+      "url": "ant-sport-health-academy.html",
+      "isNew": false
+    }
   ]
 }
