@@ -25,15 +25,9 @@
       "size": "wide"
     },
     {
-      "type": "text"
-    },
-    {
-      "type": "image",
-      "image": "/images/tt b.png",
-      "size": "tall"
-    },
-    {
-      "type": "text"
+      "type": "text",
+      "label": "THE DIFFERENCE",
+      "thesis": "That precision is rare by hand. It's what makes her work hers."
     },
     {
       "type": "text"
