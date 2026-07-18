@@ -189,16 +189,53 @@
           if (b.image) d.style.background = `center/cover no-repeat url("${b.image}")`;
           else d.textContent = '( image )';
           bb.appendChild(d);
-        } else {
-          const s = document.createElement('section');
-          s.className = 'case-section rv';
-          const h = document.createElement('h2'); h.textContent = b.heading || '';
-          s.appendChild(h);
-          splitParas(b.text || '').forEach(t => {
-            const p = document.createElement('p'); p.textContent = t; s.appendChild(p);
-          });
-          bb.appendChild(s);
+          return;
         }
+
+        // text block — three formats decided by which fields are filled
+        const s = document.createElement('section');
+        s.className = 'case-block-txt rv';
+
+        // Format A: small label above a big thesis
+        // Format B: thesis only (no label, no reveal)
+        // Format C: statement heading + smaller reveal paragraph(s)
+        const label   = (b.label   || '').trim();
+        const thesis  = (b.thesis  || b.heading || '').trim();  // heading = legacy fallback
+        const reveal  = (b.reveal  || b.text    || '').trim();  // text = legacy fallback
+
+        if (label) {
+          const l = document.createElement('div');
+          l.className = 'cb-label';
+          l.textContent = label;
+          s.appendChild(l);
+        }
+
+        // Format C: heading is a statement, reveal explains it (smaller)
+        // Detected when BOTH a thesis-as-statement and reveal exist AND no label,
+        // OR when the author explicitly used format "C". We keep it simple:
+        // if reveal exists, thesis renders as a statement heading + reveal below.
+        if (reveal) {
+          if (thesis) {
+            const h = document.createElement('h2');
+            h.className = 'cb-statement';
+            h.textContent = thesis;
+            s.appendChild(h);
+          }
+          splitParas(reveal).forEach(t => {
+            const p = document.createElement('p');
+            p.className = 'cb-reveal';
+            p.textContent = t;
+            s.appendChild(p);
+          });
+        } else if (thesis) {
+          // Format A (with label above) or B (no label): thesis is the big line
+          const h = document.createElement('h2');
+          h.className = 'cb-thesis';
+          h.textContent = thesis;
+          s.appendChild(h);
+        }
+
+        bb.appendChild(s);
       });
     }
 

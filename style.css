@@ -78,7 +78,7 @@ img { display: block; max-width: 100%; }
   top: 26px; left: 30px;
   z-index: 4;
   font-size: clamp(1.15rem, 1.6vw, 1.5rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.01em;
   color: #1601fc;
 }
@@ -430,8 +430,40 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
 .case-media.wide { aspect-ratio: 16 / 10; }
 .case-media.sq { aspect-ratio: 1 / 1; }
 
-.case-section h2 { font-size: clamp(1.5rem,2.6vw,2.1rem); margin-bottom: 20px; }
-.case-section p { color: var(--grey); font-size: 1.1rem; line-height: 1.55; max-width: 34em; }
+/* case text blocks — three formats */
+.case-block-txt { max-width: 40em; }
+
+/* Format A: small muted label above the thesis */
+.cb-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 18px;
+}
+
+/* Formats A & B: the big thesis line */
+.cb-thesis {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Format C: statement heading + smaller reveal */
+.cb-statement {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.cb-reveal {
+  color: var(--grey);
+  font-size: 1.1rem;
+  line-height: 1.55;
+  max-width: 34em;
+}
 
 .more { max-width: 1280px; margin: clamp(60px,9vw,120px) auto 0; padding: clamp(60px,9vw,120px) var(--pad) clamp(40px,5vw,70px); border-top: 1px solid var(--line); }
 .more h2 { font-size: clamp(2.4rem,5vw,4rem); font-weight: 700; letter-spacing: -0.035em; margin-bottom: 44px; }
@@ -556,4 +588,4 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
 [data-tags] { display: contents; }
 .case-intro { color: var(--grey); font-size: clamp(1.05rem,1.4vw,1.25rem); line-height: 1.5; max-width: 26em; margin-bottom: 44px; }
 .case-intro p + p { margin-top: 1em; }
-.case-section p + p { margin-top: 1em; }
+.cb-reveal + .cb-reveal { margin-top: 1em; }
