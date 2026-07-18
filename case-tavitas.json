@@ -1,0 +1,29 @@
+{
+  "title": "Tavita's Touch",
+  "intro": "Tavita is my wife. She throws every piece by hand — and finishes it with a precision most machines can't match. The work was already exceptional. What it needed was an identity that said so before a word was spoken.",
+  "meta": {
+    "year": "2025",
+    "scope": "Positioning, Brand identity",
+    "timeline": "9 weeks",
+    "liveLabel": "Preview +",
+    "liveUrl": "#"
+  },
+  "blocks": [
+    { "type": "text", "label": "THE WORK",       "thesis": "Hand-thrown, finished with machine-like precision.", "reveal": "" },
+    { "type": "text", "label": "THE DIFFERENCE", "thesis": "That precision is rare by hand. It's what makes her work hers.", "reveal": "" },
+    { "type": "text", "label": "THE ANCHOR",     "thesis": "Tavita is my wife. Her perfectionism at the wheel became the strategy.", "reveal": "" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "text", "label": "",               "thesis": "The identity.", "reveal": "" },
+    { "type": "text", "label": "THE MARK",       "thesis": "Two T's, like hands closing around clay — set in a thin serif that doesn't forgive mistakes.", "reveal": "" },
+    { "type": "image", "image": "images/tt cup.png", "size": "tall" },
+    { "type": "text", "label": "COLOR",          "thesis": "Charcoal and cream, pulled from the clay. Restraint, not decoration.", "reveal": "" },
+    { "type": "image", "image": "", "size": "square" },
+    { "type": "text", "label": "THE STAMP",      "thesis": "A heavier mark for the pieces. Turn one over — the brand is in the material.", "reveal": "" },
+    { "type": "image", "image": "", "size": "wide" },
+    { "type": "text", "label": "THE SYSTEM",     "thesis": "One mark, built to stay itself for years. Recognition compounds.", "reveal": "" }
+  ],
+  "more": [
+    { "name": "WHUN", "category": "Brand identity", "url": "whun.html", "image": "" },
+    { "name": "Cranston Bible Chapel", "category": "Brand identity", "url": "cranston-bible-chapel.html", "image": "" }
+  ]
+}

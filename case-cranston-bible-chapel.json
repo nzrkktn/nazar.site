@@ -1,0 +1,75 @@
+{
+  "title": "Cranston Bible Chapel",
+  "intro": "[ Intro — one honest paragraph. Who Cranston Bible Chapel is, what they came with, what they wanted. ]",
+  "meta": {
+    "year": "2026",
+    "scope": "Positioning, Brand identity",
+    "timeline": "[ X weeks ]",
+    "liveLabel": "Preview +",
+    "liveUrl": "#"
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "image": "",
+      "size": "tall"
+    },
+    {
+      "type": "text",
+      "label": "THE PROBLEM",
+      "thesis": "[ Big thesis line — one sharp sentence with a turn, not a description. ]",
+      "reveal": ""
+    },
+    {
+      "type": "image",
+      "image": "",
+      "size": "wide"
+    },
+    {
+      "type": "text",
+      "label": "THE STRATEGY",
+      "thesis": "[ Big thesis line — one sharp sentence with a turn, not a description. ]",
+      "reveal": ""
+    },
+    {
+      "type": "image",
+      "image": "",
+      "size": "tall"
+    },
+    {
+      "type": "text",
+      "label": "THE SOLUTION",
+      "thesis": "[ Big thesis line — one sharp sentence with a turn, not a description. ]",
+      "reveal": ""
+    },
+    {
+      "type": "image",
+      "image": "",
+      "size": "wide"
+    },
+    {
+      "type": "image",
+      "image": "",
+      "size": "square"
+    },
+    {
+      "type": "image",
+      "image": "",
+      "size": "wide"
+    }
+  ],
+  "more": [
+    {
+      "name": "WHUN",
+      "category": "Brand identity",
+      "url": "whun.html",
+      "image": ""
+    },
+    {
+      "name": "Ant Sport Health Academy",
+      "category": "Brand identity",
+      "url": "ant-sport-health-academy.html",
+      "image": ""
+    }
+  ]
+}
