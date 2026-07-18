@@ -16,7 +16,8 @@
     },
     {
       "type": "text",
-      "text": "Hand-thrown ceramics, finished to near-machine precision."
+      "label": "THE WORK",
+      "thesis": "Hand-thrown ceramics, finished to near-machine precision."
     },
     {
       "type": "image",
@@ -24,9 +25,7 @@
       "size": "wide"
     },
     {
-      "type": "text",
-      "heading": "The anchor",
-      "text": "Tavitaʼs perfectionism at the wheel became the brand's core truth: craft, taken further than craft usually goes."
+      "type": "text"
     },
     {
       "type": "image",
@@ -34,19 +33,13 @@
       "size": "tall"
     },
     {
-      "type": "text",
-      "heading": "The mark",
-      "text": "Two T's, meeting like hands closing around clay. One continuous line — handmade in spirit, exact in form."
+      "type": "text"
     },
     {
-      "type": "text",
-      "heading": "Typography",
-      "text": "A modern serif, thin weight, lowercase. Thin lines don't forgive mistakes — that's the point."
+      "type": "text"
     },
     {
-      "type": "text",
-      "heading": "Color",
-      "text": "Warm charcoal and cream, pulled from the clay itself. No bright color. Restraint reads as expensive."
+      "type": "text"
     },
     {
       "type": "image",
