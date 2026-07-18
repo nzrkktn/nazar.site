@@ -266,12 +266,17 @@ content:
           - name: text
             label: Текстова секція
             fields:
-              - name: heading
-                label: Заголовок секції
+              - name: label
+                label: Мітка (дрібна, сіра, ЗВЕРХУ)
+                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
                 type: string
-              - name: text
-                label: Текст
-                description: Порожній рядок — новий абзац.
+              - name: thesis
+                label: Теза (велике твердження)
+                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
+                type: text
+              - name: reveal
+                label: Розкриття (дрібніший текст під тезою)
+                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
                 type: text
           - name: image
             label: Зображення
@@ -356,12 +361,17 @@ content:
           - name: text
             label: Текстова секція
             fields:
-              - name: heading
-                label: Заголовок секції
+              - name: label
+                label: Мітка (дрібна, сіра, ЗВЕРХУ)
+                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
                 type: string
-              - name: text
-                label: Текст
-                description: Порожній рядок — новий абзац.
+              - name: thesis
+                label: Теза (велике твердження)
+                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
+                type: text
+              - name: reveal
+                label: Розкриття (дрібніший текст під тезою)
+                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
                 type: text
           - name: image
             label: Зображення
@@ -446,12 +456,17 @@ content:
           - name: text
             label: Текстова секція
             fields:
-              - name: heading
-                label: Заголовок секції
+              - name: label
+                label: Мітка (дрібна, сіра, ЗВЕРХУ)
+                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
                 type: string
-              - name: text
-                label: Текст
-                description: Порожній рядок — новий абзац.
+              - name: thesis
+                label: Теза (велике твердження)
+                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
+                type: text
+              - name: reveal
+                label: Розкриття (дрібніший текст під тезою)
+                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
                 type: text
           - name: image
             label: Зображення
@@ -536,12 +551,17 @@ content:
           - name: text
             label: Текстова секція
             fields:
-              - name: heading
-                label: Заголовок секції
+              - name: label
+                label: Мітка (дрібна, сіра, ЗВЕРХУ)
+                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
                 type: string
-              - name: text
-                label: Текст
-                description: Порожній рядок — новий абзац.
+              - name: thesis
+                label: Теза (велике твердження)
+                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
+                type: text
+              - name: reveal
+                label: Розкриття (дрібніший текст під тезою)
+                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
                 type: text
           - name: image
             label: Зображення
