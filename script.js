@@ -78,16 +78,34 @@
       arr.forEach((s, i) => {
         const d = document.createElement('div');
         d.className = `slide slide-${(i % 4) + 1}` + (i === 0 ? ' active' : '');
+        const link = document.createElement(s.url ? 'a' : 'div');
+        link.className = 'slide-link';
+        if (s.url) link.href = s.url;
         const f = document.createElement('div');
         f.className = 'fill';
         if (s.image) f.style.background = `center/cover no-repeat url("${s.image}")`;
         else f.textContent = `( work — ${s.title || '…'} )`;
-        d.appendChild(f);
+        link.appendChild(f);
         const c = document.createElement('div');
         c.className = 'caption';
         const h = document.createElement('h3'); h.textContent = s.title || '';
         const sp = document.createElement('span'); sp.textContent = s.category || '';
-        c.append(h, sp); d.appendChild(c);
+        c.append(h, sp); link.appendChild(c);
+        if (s.url) {
+          if (s.logo) {
+            const logo = document.createElement('img');
+            logo.className = 'slide-logo';
+            logo.src = s.logo;
+            logo.alt = s.title ? `${s.title} logo` : '';
+            link.appendChild(logo);
+          } else {
+            const logo = document.createElement('span');
+            logo.className = 'slide-logo slide-logo-text';
+            logo.textContent = s.title || '';
+            link.appendChild(logo);
+          }
+        }
+        d.appendChild(link);
         slidesBox.appendChild(d);
       });
       const dots = document.querySelector('.dots');

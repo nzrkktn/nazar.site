@@ -2,20 +2,28 @@
   {
     "title": "Tavita's Touch",
     "category": "Ceramic Artist",
-    "image": "/images/ChatGPT Image Jul 14 2026 (1)-2.png"
+    "image": "/images/ChatGPT Image Jul 14 2026 (1)-2.png",
+    "url": "tavitas-touch.html",
+    "logo": ""
   },
   {
     "title": "WHUN",
     "category": "Clothing Brand",
-    "image": "/images/ChatGPT Image May 25 2026 (3)-1.png"
+    "image": "/images/ChatGPT Image May 25 2026 (3)-1.png",
+    "url": "whun.html",
+    "logo": ""
   },
   {
     "title": "Cranston Bible Chapel",
-    "category": "Church"
+    "category": "Church",
+    "url": "cranston-bible-chapel.html",
+    "logo": ""
   },
   {
     "title": "Ant ",
     "category": "Sport Health Academy",
-    "image": "/images/ChatGPT Image Jul 15 2026 from nzrkktn-1.png"
+    "image": "/images/ChatGPT Image Jul 15 2026 from nzrkktn-1.png",
+    "url": "ant-sport-health-academy.html",
+    "logo": ""
   }
 ]

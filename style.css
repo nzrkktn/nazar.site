@@ -198,16 +198,45 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   transition: opacity 0.7s var(--ease);
 }
 .slide.active { opacity: 1; }
+.slide-link { position: absolute; inset: 0; display: block; overflow: hidden; }
+a.slide-link { cursor: pointer; }
 .slide .fill {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   font-size: 0.8rem; letter-spacing: 0.05em;
   color: rgba(255,255,255,0.65);
+  transition: transform 1.4s var(--ease), filter 1.4s var(--ease);
+}
+a.slide-link:hover .fill, a.slide-link:focus-visible .fill {
+  transform: scale(1.08);
+  filter: blur(6px);
 }
 .slide-1 .fill { background: linear-gradient(150deg, #6d7a63, #46503f); }
 .slide-2 .fill { background: linear-gradient(150deg, #4d5f74, #2f3d4c); }
 .slide-3 .fill { background: linear-gradient(150deg, #b08a5a, #6d5230); }
 .slide-4 .fill { background: linear-gradient(150deg, #7a6478, #4c3d4a); }
+
+.slide-logo {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 72%;
+  max-height: 46%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease) 0.2s;
+  pointer-events: none;
+}
+.slide-logo-text {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #fff;
+  white-space: nowrap;
+}
+a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
+  opacity: 1;
+}
 
 /* caption sits above the dots row — extra bottom padding prevents overlap */
 .slide .caption {

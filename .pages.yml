@@ -46,6 +46,12 @@ content:
       - name: image
         label: Зображення
         type: image
+      - name: url
+        label: Посилання на кейс
+        type: string
+      - name: logo
+        label: Логотип (з'являється при наведенні)
+        type: image
 
   - name: home
     label: Головна
