@@ -600,7 +600,7 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
 
 @media (max-width: 720px) {
   .split { grid-template-columns: minmax(0, 1fr); }
-  .panel { position: relative; height: 78vh; }
+  .panel { position: relative; height: 50vh; }
   .content { min-height: auto; }
 
   /* logo + theme toggle move onto the panel photo; nav becomes a scrollable pill row */
