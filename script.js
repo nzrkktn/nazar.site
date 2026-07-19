@@ -327,7 +327,7 @@
   }
 
   // — load content from per-section JSON files (edited via Pages CMS) —
-  const FILES = {
+  const ALL_FILES = {
     site: 'content/site.json',
     slides: 'content/slides.json',
     home: 'content/home.json',
@@ -337,6 +337,22 @@
     contact: 'content/contact.json',
     footer: 'content/footer.json'
   };
+
+  // only fetch the sections this page actually binds to, so the first
+  // real content (photo, text) paints as soon as possible — not after
+  // every page's data has round-tripped
+  const CONTAINER_NEEDS = { slides: 'slides', projects: 'projects', tiers: 'services', rules: 'services' };
+  const needed = new Set();
+  document.querySelectorAll('[data-c],[data-rich],[data-tags],[data-img]').forEach(el => {
+    const v = el.dataset.c || el.dataset.rich || el.dataset.tags || el.dataset.img;
+    if (v) needed.add(v.split('.')[0]);
+  });
+  Object.entries(CONTAINER_NEEDS).forEach(([attr, key]) => {
+    if (document.querySelector('[data-' + attr + ']')) needed.add(key);
+  });
+
+  const FILES = {};
+  Object.entries(ALL_FILES).forEach(([key, path]) => { if (needed.has(key)) FILES[key] = path; });
 
   // case pages declare their own content file: <body data-case-file="content/case-xxx.json">
   const caseFile = document.body.dataset.caseFile;
