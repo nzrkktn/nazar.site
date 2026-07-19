@@ -85,14 +85,11 @@ content:
         type: string
         list:
           max: 3
-      - name: quote
-        label: Цитата внизу фото
-        type: text
       - name: photo
         label: Фото
         type: image
       - name: signature
-        label: Підпис
+        label: Ім'я внизу фото
         type: string
       - name: cta
         label: Кнопка

@@ -248,13 +248,6 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
 /* ——————— ABOUT ——————— */
 
 .about-copy .body-lg { max-width: none; font-size: clamp(0.9rem, 1.15vw, 1.05rem); }
-.sign {
-  margin-top: 40px;
-  font-style: italic;
-  font-size: 2rem;
-  font-weight: 600;
-  opacity: 0.85;
-}
 
 .tag-float {
   position: absolute;
