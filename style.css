@@ -146,10 +146,10 @@ img { display: block; max-width: 100%; }
 .panel-topbar .panel-theme-btn { display: none; }
 .panel-theme-btn {
   width: 40px; height: 40px;
-  background: rgba(0,0,0,0.28);
+  background: transparent;
   color: #fff;
 }
-.panel-theme-btn:hover { background: rgba(0,0,0,0.5); }
+.panel-theme-btn:hover { background: rgba(0,0,0,0.18); }
 
 .menu-btn { display: none; }
 
@@ -208,7 +208,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
 
 /* ——————— HERO (home) ——————— */
 
-.hero-block { margin-top: 4vh; margin-bottom: auto; }
+.hero-block { margin-top: 4vh; margin-bottom: 40px; }
 .hero-block .badge { margin-bottom: 44px; }
 .hero-block h1 { margin-bottom: 56px; max-width: 12em; }
 
@@ -609,13 +609,17 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
 
 @media (max-width: 720px) {
   .split { grid-template-columns: minmax(0, 1fr); }
-  .panel { position: relative; height: 50vh; }
+  .panel { position: relative; height: 34vh; }
   .content { min-height: auto; }
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
   :root { --panel-inset: 20px; }
   .panel-logo img { height: 30px; }
   .panel-topbar .panel-theme-btn { display: grid; }
+  /* equalize the photo -> nav -> badge -> headline rhythm to match the
+     smallest of the three (the .content top padding, ~28px) */
+  .hero-block { margin-top: 0; }
+  .hero-block .badge { margin-bottom: 28px; }
   .split .topnav > .theme-btn { display: none; }
   .menu-btn { display: none; }
   .topnav {
@@ -635,7 +639,6 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
   .topnav ul::-webkit-scrollbar { display: none; }
   .topnav a { white-space: nowrap; }
   .topnav li { flex: 0 0 auto; }
-  .topnav a[aria-current="page"] { background: var(--pill-bg); color: var(--ink); }
 
   .site-logo img { height: 30px; }
   .form-grid { grid-template-columns: 1fr; }
