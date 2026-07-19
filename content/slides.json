@@ -4,26 +4,23 @@
     "category": "Ceramic Artist",
     "image": "/images/ChatGPT Image Jul 14 2026 (1)-2.png",
     "url": "tavitas-touch.html",
-    "logo": ""
+    "logo": "/images/tt.png"
   },
   {
     "title": "WHUN",
     "category": "Clothing Brand",
     "image": "/images/ChatGPT Image May 25 2026 (3)-1.png",
-    "url": "whun.html",
-    "logo": ""
+    "url": "whun.html"
   },
   {
     "title": "Cranston Bible Chapel",
     "category": "Church",
-    "url": "cranston-bible-chapel.html",
-    "logo": ""
+    "url": "cranston-bible-chapel.html"
   },
   {
     "title": "Ant ",
     "category": "Sport Health Academy",
     "image": "/images/ChatGPT Image Jul 15 2026 from nzrkktn-1.png",
-    "url": "ant-sport-health-academy.html",
-    "logo": ""
+    "url": "ant-sport-health-academy.html"
   }
 ]
