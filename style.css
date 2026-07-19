@@ -612,6 +612,8 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
   .content { min-height: auto; }
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
+  .panel-topbar { top: 18px; left: 18px; right: 18px; }
+  .panel-logo img { height: 26px; }
   .panel-topbar .panel-theme-btn { display: grid; }
   .split .topnav > .theme-btn { display: none; }
   .menu-btn { display: none; }
