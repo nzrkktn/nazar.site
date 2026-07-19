@@ -69,9 +69,10 @@ img { display: block; max-width: 100%; }
   height: 100%;
   border-radius: var(--radius);
   overflow: hidden;
-  background: #46503f;
+  background: #e9e9e9;
   color: var(--panel-text);
 }
+[data-theme="dark"] .panel-inner { background: #222; }
 
 .panel .logo {
   position: absolute;
@@ -212,10 +213,8 @@ a.slide-link:hover .fill, a.slide-link:focus-visible .fill {
   transform: scale(1.08);
   filter: blur(6px);
 }
-.slide-1 .fill { background: linear-gradient(150deg, #6d7a63, #46503f); }
-.slide-2 .fill { background: linear-gradient(150deg, #4d5f74, #2f3d4c); }
-.slide-3 .fill { background: linear-gradient(150deg, #b08a5a, #6d5230); }
-.slide-4 .fill { background: linear-gradient(150deg, #7a6478, #4c3d4a); }
+.slide .fill { background: #e9e9e9; }
+[data-theme="dark"] .slide .fill { background: #222; }
 
 .slide-logo {
   position: absolute; top: 50%; left: 50%;
