@@ -242,8 +242,27 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.025em; }
   z-index: 4;
   display: flex; gap: 8px;
 }
-.dot { width: 26px; height: 4px; border-radius: 4px; background: rgba(22,1,252,0.32); border:0; cursor:pointer; padding:0; transition: background 0.3s; }
-.dot.active { background: #1601fc; }
+.dot {
+  position: relative;
+  width: 26px; height: 4px; border-radius: 4px;
+  background: rgba(22,1,252,0.32);
+  border: 0; cursor: pointer; padding: 0;
+  overflow: hidden;
+}
+.dot::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: #1601fc;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.dot.active::after { animation: dot-fill 4.5s linear forwards; }
+.dot.done::after { transform: scaleX(1); }
+
+@keyframes dot-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
 
 /* ——————— ABOUT ——————— */
 

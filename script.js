@@ -284,7 +284,10 @@
     const go = n => {
       i = (n + slides.length) % slides.length;
       slides.forEach((s, k) => s.classList.toggle('active', k === i));
-      dots.forEach((d, k) => d.classList.toggle('active', k === i));
+      dots.forEach((d, k) => {
+        d.classList.toggle('active', k === i);
+        d.classList.toggle('done', k < i);
+      });
     };
     const next = () => go(i + 1);
     const start = () => { window.__slTimer = setInterval(next, 4500); };
