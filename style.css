@@ -149,7 +149,9 @@ img { display: block; max-width: 100%; }
   background: transparent;
   color: #fff;
 }
-.panel-theme-btn:hover { background: rgba(0,0,0,0.18); }
+.panel-theme-btn:hover,
+.panel-theme-btn:focus,
+.panel-theme-btn:active { background: transparent; }
 
 .menu-btn { display: none; }
 
@@ -609,7 +611,9 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
 
 @media (max-width: 720px) {
   .split { grid-template-columns: minmax(0, 1fr); }
-  .panel { position: relative; height: 34vh; }
+  /* drop the panel's own bottom padding — .content's top padding already
+     supplies the gap below the photo, so keeping both double-counts it */
+  .panel { position: relative; height: 34vh; padding-bottom: 0; }
   .content { min-height: auto; }
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
