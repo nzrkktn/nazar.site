@@ -359,14 +359,14 @@
 // theme — sun in light, moon in dark
 (function () {
   const root = document.documentElement;
-  const saved = window.__theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const saved = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   root.setAttribute('data-theme', saved);
   document.addEventListener('click', e => {
     const t = e.target.closest('.theme-btn');
     if (!t) return;
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
-    window.__theme = next;
+    localStorage.setItem('theme', next);
   });
 })();
 
