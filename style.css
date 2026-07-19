@@ -135,14 +135,14 @@ img { display: block; max-width: 100%; }
 [data-theme="dark"] .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: block; }
 
-/* logo + theme toggle overlaid on the panel photo */
+/* logo overlaid on the panel photo; theme toggle stays in the nav on desktop */
 .panel-topbar {
   display: flex; align-items: center; justify-content: space-between;
   position: absolute; top: 20px; left: 20px; right: 20px; z-index: 5;
 }
-.panel-logo img { display: block; height: 26px; width: auto; }
-.split .topnav > .site-logo,
-.split .topnav > .theme-btn { display: none; }
+.panel-logo img { display: block; height: 36px; width: auto; }
+.split .topnav > .site-logo { display: none; }
+.panel-topbar .panel-theme-btn { display: none; }
 .panel-theme-btn {
   width: 40px; height: 40px;
   background: rgba(0,0,0,0.28);
@@ -608,7 +608,9 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
   .panel { position: relative; height: 50vh; }
   .content { min-height: auto; }
 
-  /* nav becomes a scrollable pill row on mobile */
+  /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
+  .panel-topbar .panel-theme-btn { display: grid; }
+  .split .topnav > .theme-btn { display: none; }
   .menu-btn { display: none; }
   .topnav {
     flex-wrap: wrap;
