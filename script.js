@@ -118,7 +118,6 @@
           dots.appendChild(b);
         });
       }
-      initSlider();
     }
 
     // — projects list —
@@ -137,6 +136,8 @@
         a.append(n, c, y); li.appendChild(a); pl.appendChild(li);
       });
     }
+
+    if (slidesBox) initSlider();
 
     // — pricing tiers —
     const tb = document.querySelector('[data-tiers]');
@@ -296,6 +297,7 @@
     const slides = [...document.querySelectorAll('.slide')];
     const dots = [...document.querySelectorAll('.dot')];
     const arrow = document.querySelector('.slider-arrow');
+    const rows = [...document.querySelectorAll('.proj-row')];
     clearInterval(window.__slTimer);
     if (slides.length < 2) return;
     let i = 0;
@@ -307,6 +309,16 @@
         d.classList.toggle('done', k < i);
       });
     };
+    // project list rows (e.g. Projects page): photo follows hover, newest by default, no autoplay
+    if (rows.length) {
+      rows.forEach((row, k) => {
+        row.addEventListener('mouseenter', () => go(k));
+        row.addEventListener('mouseleave', () => go(0));
+        row.addEventListener('focus', () => go(k));
+        row.addEventListener('blur', () => go(0));
+      });
+      return;
+    }
     const next = () => go(i + 1);
     const start = () => { window.__slTimer = setInterval(next, 4500); };
     const reset = () => { clearInterval(window.__slTimer); start(); };
