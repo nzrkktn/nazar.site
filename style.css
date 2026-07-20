@@ -18,6 +18,7 @@
   --pad: clamp(22px, 3.5vw, 56px);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --panel-w: 46vw;
+  --panel-pad: clamp(20px, 2vw, 32px);
   --panel-inset: 34px;
 }
 
@@ -63,7 +64,7 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   height: 100vh;
-  padding: clamp(20px, 2vw, 32px);
+  padding: var(--panel-pad);
 }
 .panel-inner {
   position: relative;
@@ -142,7 +143,22 @@ img { display: block; max-width: 100%; }
   position: absolute; top: var(--panel-inset); left: var(--panel-inset); right: var(--panel-inset); z-index: 5;
 }
 .panel-logo img { display: block; height: 44px; width: auto; }
-.split .topnav > .site-logo { display: none; }
+.topnav > .site-logo { display: none; }
+
+/* pages without a photo panel (Services) still need the logo somewhere —
+   pin it in the same top-left spot the panel-topbar logo occupies
+   elsewhere, so it doesn't relocate when navigating between pages */
+.page-logo {
+  position: fixed;
+  top: calc(var(--panel-pad) + var(--panel-inset));
+  left: calc(var(--panel-pad) + var(--panel-inset));
+  z-index: 5;
+  display: inline-block; line-height: 0;
+}
+.page-logo img { display: block; height: 44px; width: auto; }
+.page-logo .logo-dark { display: none; }
+[data-theme="dark"] .page-logo .logo-light { display: none; }
+[data-theme="dark"] .page-logo .logo-dark { display: block; }
 .panel-topbar .panel-theme-btn { display: none; }
 .panel-theme-btn {
   width: 40px; height: 40px;
@@ -618,7 +634,7 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
   :root { --panel-inset: 20px; }
-  .panel-logo img { height: 30px; }
+  .panel-logo img, .page-logo img { height: 30px; }
   .panel-topbar .panel-theme-btn { display: grid; }
   /* equalize the photo -> nav -> badge -> headline rhythm to match the
      smallest of the three (the .content top padding, ~28px) */
