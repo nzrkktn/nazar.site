@@ -256,48 +256,190 @@ content:
           - name: liveUrl
             label: URL посилання Live
             type: string
-      - name: blocks
-        label: Контент справа (блоки)
-        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
-        type: block
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{index}. {heading}"
-        blockKey: type
-        blocks:
-          - name: text
-            label: Текстова секція
-            fields:
-              - name: label
-                label: Мітка (дрібна, сіра, ЗВЕРХУ)
-                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
-                type: string
-              - name: thesis
-                label: Теза (велике твердження)
-                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
-                type: text
-              - name: reveal
-                label: Розкриття (дрібніший текст під тезою)
-                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
-                type: text
+      - name: subject
+        label: "01 · The Subject — продукт / місце / люди"
+        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        type: object
+        fields:
           - name: image
             label: Зображення
-            fields:
-              - name: image
-                label: Файл
-                type: image
-              - name: size
-                label: Формат
-                type: select
-                options:
-                  values:
-                    - value: tall
-                      label: Вертикальне (4:5)
-                    - value: wide
-                      label: Широке (16:10)
-                    - value: square
-                      label: Квадрат (1:1)
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: difference
+        label: "02 · The Difference — правда про бренд"
+        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: anchor
+        label: "03 · The Anchor — стратегічний якір"
+        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: identity
+        label: "04 · The Identity — розкриття"
+        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: mark
+        label: "05 · The Mark — знак"
+        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: typeColor
+        label: "06 · Type & Color — голос"
+        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: inWorld
+        label: "07 · In The World — застосування"
+        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: result
+        label: "Результат (опційно, перед блоком 08)"
+        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        type: object
+        fields:
+          - name: text
+            label: Текст (цитата/цифра)
+            type: text
+      - name: system
+        label: "08 · The System — закриття активом"
+        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
       - name: more
         label: More projects (внизу)
         type: object
@@ -351,48 +493,190 @@ content:
           - name: liveUrl
             label: URL посилання Live
             type: string
-      - name: blocks
-        label: Контент справа (блоки)
-        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
-        type: block
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{index}. {heading}"
-        blockKey: type
-        blocks:
-          - name: text
-            label: Текстова секція
-            fields:
-              - name: label
-                label: Мітка (дрібна, сіра, ЗВЕРХУ)
-                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
-                type: string
-              - name: thesis
-                label: Теза (велике твердження)
-                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
-                type: text
-              - name: reveal
-                label: Розкриття (дрібніший текст під тезою)
-                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
-                type: text
+      - name: subject
+        label: "01 · The Subject — продукт / місце / люди"
+        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        type: object
+        fields:
           - name: image
             label: Зображення
-            fields:
-              - name: image
-                label: Файл
-                type: image
-              - name: size
-                label: Формат
-                type: select
-                options:
-                  values:
-                    - value: tall
-                      label: Вертикальне (4:5)
-                    - value: wide
-                      label: Широке (16:10)
-                    - value: square
-                      label: Квадрат (1:1)
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: difference
+        label: "02 · The Difference — правда про бренд"
+        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: anchor
+        label: "03 · The Anchor — стратегічний якір"
+        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: identity
+        label: "04 · The Identity — розкриття"
+        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: mark
+        label: "05 · The Mark — знак"
+        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: typeColor
+        label: "06 · Type & Color — голос"
+        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: inWorld
+        label: "07 · In The World — застосування"
+        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: result
+        label: "Результат (опційно, перед блоком 08)"
+        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        type: object
+        fields:
+          - name: text
+            label: Текст (цитата/цифра)
+            type: text
+      - name: system
+        label: "08 · The System — закриття активом"
+        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
       - name: more
         label: More projects (внизу)
         type: object
@@ -446,48 +730,190 @@ content:
           - name: liveUrl
             label: URL посилання Live
             type: string
-      - name: blocks
-        label: Контент справа (блоки)
-        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
-        type: block
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{index}. {heading}"
-        blockKey: type
-        blocks:
-          - name: text
-            label: Текстова секція
-            fields:
-              - name: label
-                label: Мітка (дрібна, сіра, ЗВЕРХУ)
-                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
-                type: string
-              - name: thesis
-                label: Теза (велике твердження)
-                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
-                type: text
-              - name: reveal
-                label: Розкриття (дрібніший текст під тезою)
-                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
-                type: text
+      - name: subject
+        label: "01 · The Subject — продукт / місце / люди"
+        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        type: object
+        fields:
           - name: image
             label: Зображення
-            fields:
-              - name: image
-                label: Файл
-                type: image
-              - name: size
-                label: Формат
-                type: select
-                options:
-                  values:
-                    - value: tall
-                      label: Вертикальне (4:5)
-                    - value: wide
-                      label: Широке (16:10)
-                    - value: square
-                      label: Квадрат (1:1)
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: difference
+        label: "02 · The Difference — правда про бренд"
+        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: anchor
+        label: "03 · The Anchor — стратегічний якір"
+        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: identity
+        label: "04 · The Identity — розкриття"
+        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: mark
+        label: "05 · The Mark — знак"
+        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: typeColor
+        label: "06 · Type & Color — голос"
+        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: inWorld
+        label: "07 · In The World — застосування"
+        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: result
+        label: "Результат (опційно, перед блоком 08)"
+        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        type: object
+        fields:
+          - name: text
+            label: Текст (цитата/цифра)
+            type: text
+      - name: system
+        label: "08 · The System — закриття активом"
+        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
       - name: more
         label: More projects (внизу)
         type: object
@@ -541,48 +967,190 @@ content:
           - name: liveUrl
             label: URL посилання Live
             type: string
-      - name: blocks
-        label: Контент справа (блоки)
-        description: Текстові секції та зображення у будь-якому порядку. Перетягуй, додавай, видаляй.
-        type: block
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{index}. {heading}"
-        blockKey: type
-        blocks:
-          - name: text
-            label: Текстова секція
-            fields:
-              - name: label
-                label: Мітка (дрібна, сіра, ЗВЕРХУ)
-                description: "Напр. THE WORK, COLOR. Порожньо — без мітки (Формат B)."
-                type: string
-              - name: thesis
-                label: Теза (велике твердження)
-                description: "Головний рядок блоку. З мітою = Формат A, без мітки = Формат B."
-                type: text
-              - name: reveal
-                label: Розкриття (дрібніший текст під тезою)
-                description: "Заповни, щоб зробити Формат C: теза стає заголовком, це — поясненням. Порожньо = теза лишається головним рядком."
-                type: text
+      - name: subject
+        label: "01 · The Subject — продукт / місце / люди"
+        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        type: object
+        fields:
           - name: image
             label: Зображення
-            fields:
-              - name: image
-                label: Файл
-                type: image
-              - name: size
-                label: Формат
-                type: select
-                options:
-                  values:
-                    - value: tall
-                      label: Вертикальне (4:5)
-                    - value: wide
-                      label: Широке (16:10)
-                    - value: square
-                      label: Квадрат (1:1)
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: difference
+        label: "02 · The Difference — правда про бренд"
+        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: anchor
+        label: "03 · The Anchor — стратегічний якір"
+        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: identity
+        label: "04 · The Identity — розкриття"
+        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: mark
+        label: "05 · The Mark — знак"
+        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: typeColor
+        label: "06 · Type & Color — голос"
+        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: inWorld
+        label: "07 · In The World — застосування"
+        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
+      - name: result
+        label: "Результат (опційно, перед блоком 08)"
+        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        type: object
+        fields:
+          - name: text
+            label: Текст (цитата/цифра)
+            type: text
+      - name: system
+        label: "08 · The System — закриття активом"
+        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        type: object
+        fields:
+          - name: image
+            label: Зображення
+            type: image
+          - name: size
+            label: Формат
+            type: select
+            options:
+              values:
+                - value: tall
+                  label: Вертикальне (4:5)
+                - value: wide
+                  label: Широке (16:10)
+                - value: square
+                  label: Квадрат (1:1)
+          - name: text
+            label: Текст
+            type: text
       - name: more
         label: More projects (внизу)
         type: object

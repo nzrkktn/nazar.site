@@ -203,66 +203,51 @@
       }
     }
 
-    // — case page: ordered blocks (any count, any order) —
+    // — case page: fixed 8-step editorial structure (subject, difference,
+    // anchor, identity, mark, typeColor, inWorld, [result], system) —
     const bb = document.querySelector('[data-blocks]');
     if (bb) {
-      const arr = (C.case && C.case.blocks) || [];
+      const cse = C.case || {};
       bb.innerHTML = '';
-      arr.forEach(b => {
-        if (b.type === 'image') {
-          const d = document.createElement('div');
-          d.className = 'case-media rv' + (b.size === 'wide' ? ' wide' : b.size === 'square' ? ' sq' : '');
-          if (b.image) d.style.background = `center/cover no-repeat url("${b.image}")`;
-          else d.textContent = '( image )';
-          bb.appendChild(d);
-          return;
-        }
-
-        // text block — three formats decided by which fields are filled
+      const renderMedia = b => {
+        if (!b || !b.image) return;
+        const d = document.createElement('div');
+        d.className = 'case-media rv' + (b.size === 'wide' ? ' wide' : b.size === 'square' ? ' sq' : '');
+        d.style.background = `center/cover no-repeat url("${b.image}")`;
+        bb.appendChild(d);
+      };
+      const renderText = (b, label) => {
+        const text = ((b && b.text) || '').trim();
+        if (!text) return;
         const s = document.createElement('section');
         s.className = 'case-block-txt rv';
-
-        // Format A: small label above a big thesis
-        // Format B: thesis only (no label, no reveal)
-        // Format C: statement heading + smaller reveal paragraph(s)
-        const label   = (b.label   || '').trim();
-        const thesis  = (b.thesis  || b.heading || '').trim();  // heading = legacy fallback
-        const reveal  = (b.reveal  || b.text    || '').trim();  // text = legacy fallback
-
         if (label) {
           const l = document.createElement('div');
           l.className = 'cb-label';
           l.textContent = label;
           s.appendChild(l);
         }
-
-        // Format C: heading is a statement, reveal explains it (smaller)
-        // Detected when BOTH a thesis-as-statement and reveal exist AND no label,
-        // OR when the author explicitly used format "C". We keep it simple:
-        // if reveal exists, thesis renders as a statement heading + reveal below.
-        if (reveal) {
-          if (thesis) {
-            const h = document.createElement('h2');
-            h.className = 'cb-statement';
-            h.textContent = thesis;
-            s.appendChild(h);
-          }
-          splitParas(reveal).forEach(t => {
-            const p = document.createElement('p');
-            p.className = 'cb-reveal';
-            p.textContent = t;
-            s.appendChild(p);
-          });
-        } else if (thesis) {
-          // Format A (with label above) or B (no label): thesis is the big line
-          const h = document.createElement('h2');
-          h.className = 'cb-thesis';
-          h.textContent = thesis;
-          s.appendChild(h);
-        }
-
+        const h = document.createElement('h2');
+        h.className = 'cb-thesis';
+        h.textContent = text;
+        s.appendChild(h);
         bb.appendChild(s);
+      };
+      [
+        ['subject', 'THE SUBJECT'],
+        ['difference', 'THE DIFFERENCE'],
+        ['anchor', 'THE ANCHOR'],
+        ['identity', 'THE IDENTITY'],
+        ['mark', 'THE MARK'],
+        ['typeColor', 'TYPE & COLOR'],
+        ['inWorld', 'IN THE WORLD'],
+      ].forEach(([key, label]) => {
+        renderMedia(cse[key]);
+        renderText(cse[key], label);
       });
+      renderText(cse.result, '');
+      renderMedia(cse.system);
+      renderText(cse.system, 'THE SYSTEM');
     }
 
     // — case live link —

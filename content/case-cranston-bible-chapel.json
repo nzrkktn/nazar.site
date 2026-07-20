@@ -8,17 +8,15 @@
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
-  "blocks": [
-    { "type": "image", "image": "", "size": "tall" },
-    { "type": "text",  "heading": "The problem",  "text": "[ What wasn't working — in plain language. ]" },
-    { "type": "image", "image": "", "size": "wide" },
-    { "type": "text",  "heading": "The strategy", "text": "[ The thinking before the visuals — Discovery & Positioning. ]" },
-    { "type": "image", "image": "", "size": "tall" },
-    { "type": "text",  "heading": "The solution", "text": "[ What was built, where it lives, how it works in the real world. ]" },
-    { "type": "image", "image": "", "size": "wide" },
-    { "type": "image", "image": "", "size": "square" },
-    { "type": "image", "image": "", "size": "wide" }
-  ],
+  "subject": { "image": "", "size": "tall", "text": "" },
+  "difference": { "image": "", "size": "wide", "text": "" },
+  "anchor": { "image": "", "size": "tall", "text": "" },
+  "identity": { "image": "", "size": "wide", "text": "" },
+  "mark": { "image": "", "size": "square", "text": "" },
+  "typeColor": { "image": "", "size": "wide", "text": "" },
+  "inWorld": { "image": "", "size": "wide", "text": "" },
+  "result": { "text": "" },
+  "system": { "image": "", "size": "wide", "text": "" },
   "more": [
     { "name": "WHUN", "category": "Brand identity", "url": "whun.html", "image": "" },
     { "name": "Ant Sport Health Academy", "category": "Brand identity", "url": "ant-sport-health-academy.html", "image": "" }
