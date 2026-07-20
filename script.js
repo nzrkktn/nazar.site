@@ -161,7 +161,7 @@
         });
         const btn = document.createElement('a');
         btn.className = 'btn ' + (t.hero ? 'solid' : 'soft');
-        btn.href = 'contact.html';
+        btn.href = 'contact.html?tier=' + encodeURIComponent(t.name || '');
         btn.textContent = t.button || ('Choose ' + (t.name || ''));
         d.append(fl, h, pr, fo, ul, btn); tb.appendChild(d);
       });
@@ -188,12 +188,19 @@
       sel.innerHTML = '';
       arr.forEach(t => {
         const o = document.createElement('option');
+        o.value = t.name || '';
         o.textContent = `${t.name} — ${t.price}`;
         sel.appendChild(o);
       });
       const o = document.createElement('option');
       o.textContent = 'Not sure yet';
       sel.appendChild(o);
+
+      // pre-select the tier the visitor picked on the Services page
+      const wantedTier = new URLSearchParams(location.search).get('tier');
+      if (wantedTier && [...sel.options].some(opt => opt.value === wantedTier)) {
+        sel.value = wantedTier;
+      }
     }
 
     // — case page: ordered blocks (any count, any order) —
@@ -353,7 +360,7 @@
   // only fetch the sections this page actually binds to, so the first
   // real content (photo, text) paints as soon as possible — not after
   // every page's data has round-tripped
-  const CONTAINER_NEEDS = { slides: 'slides', projects: 'projects', tiers: 'services', rules: 'services' };
+  const CONTAINER_NEEDS = { slides: 'slides', projects: 'projects', tiers: 'services', rules: 'services', 'tier-select': 'services' };
   const needed = new Set();
   document.querySelectorAll('[data-c],[data-rich],[data-tags],[data-img]').forEach(el => {
     const v = el.dataset.c || el.dataset.rich || el.dataset.tags || el.dataset.img;

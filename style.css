@@ -29,7 +29,7 @@
   --line: #262626;
   --field: #1c1c1c;
   --field-line: #2c2c2c;
-  --accent: #4636ff;          /* lifted for dark bg */
+  --accent: #1601fc;
   --pill-bg: #1e1e1e;
   --pill-active: #2a2a2a;
   --panel-text: #ffffff;
@@ -76,16 +76,6 @@ img { display: block; max-width: 100%; }
 }
 [data-theme="dark"] .panel-inner { background: #222; }
 
-.panel .logo {
-  position: absolute;
-  top: 26px; left: 30px;
-  z-index: 4;
-  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: #1601fc;
-}
-
 .site-logo { display: inline-block; line-height: 0; margin-right: auto; }
 .site-logo img { display: block; height: 38px; width: auto; }
 .site-logo .logo-dark { display: none; }
@@ -118,7 +108,7 @@ img { display: block; max-width: 100%; }
   transition: background 0.25s var(--ease), color 0.25s var(--ease);
 }
 .topnav a:hover { color: var(--ink); }
-.topnav a[aria-current="page"] { background: none; color: #1601fc; font-weight: 600; }
+.topnav a[aria-current="page"] { background: none; color: var(--accent); font-weight: 600; }
 
 .theme-btn {
   width: 38px; height: 38px;
@@ -149,7 +139,7 @@ img { display: block; max-width: 100%; }
    pin it in the same top-left spot the panel-topbar logo occupies
    elsewhere, so it doesn't relocate when navigating between pages */
 .page-logo {
-  position: fixed;
+  position: absolute;
   top: calc(var(--panel-pad) + var(--panel-inset));
   left: calc(var(--panel-pad) + var(--panel-inset));
   z-index: 5;
@@ -249,7 +239,10 @@ a.slide-link { cursor: pointer; }
   color: rgba(255,255,255,0.65);
   transition: transform 1.4s var(--ease), filter 1.4s var(--ease);
 }
-a.slide-link:hover .fill, a.slide-link:focus-visible .fill {
+/* the scale/blur/logo hover reveal is a home-page-only flourish —
+   Projects drives the photo from the list instead, so it stays still */
+body:not(.projects-page) a.slide-link:hover .fill,
+body:not(.projects-page) a.slide-link:focus-visible .fill {
   transform: scale(1.08);
   filter: blur(6px);
 }
@@ -274,7 +267,8 @@ a.slide-link:hover .fill, a.slide-link:focus-visible .fill {
   color: #fff;
   white-space: nowrap;
 }
-a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
+body:not(.projects-page) a.slide-link:hover .slide-logo,
+body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   opacity: 1;
 }
 
@@ -298,14 +292,14 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
   width: 48px; height: 48px;
   border-radius: 999px;
   border: 0;
-  background: #1601fc;
+  background: var(--accent);
   color: #fff;
   cursor: pointer;
   display: grid; place-items: center;
   font-size: 1.2rem;
   transition: background 0.25s;
 }
-.slider-arrow:hover { background: #3d2dff; }
+.slider-arrow:hover { background: color-mix(in srgb, var(--accent) 80%, black); }
 
 /* dots on their own row, below the caption */
 .dots {
@@ -317,14 +311,14 @@ a.slide-link:hover .slide-logo, a.slide-link:focus-visible .slide-logo {
 .dot {
   position: relative;
   width: 26px; height: 4px; border-radius: 4px;
-  background: rgba(22,1,252,0.32);
+  background: color-mix(in srgb, var(--accent) 32%, transparent);
   border: 0; cursor: pointer; padding: 0;
   overflow: hidden;
 }
 .dot::after {
   content: '';
   position: absolute; inset: 0;
-  background: #1601fc;
+  background: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
 }
