@@ -1,6 +1,6 @@
 {
-  "title": "Cranston Bible Chapel",
-  "intro": "[ Intro — one honest paragraph. Who Cranston Bible Chapel is, what they came with, what they wanted. ]",
+  "title": "Oksana Nazarevich",
+  "intro": "What feels tangled inside becomes clearer once it is brought into conversation.",
   "meta": {
     "year": "2026",
     "scope": "Positioning, Brand identity",
@@ -8,17 +8,48 @@
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
-  "subject": { "image": "", "size": "tall", "text": "" },
-  "difference": { "image": "", "size": "wide", "text": "" },
-  "anchor": { "image": "", "size": "tall", "text": "" },
-  "identity": { "image": "", "size": "wide", "text": "" },
-  "mark": { "image": "", "size": "square", "text": "" },
-  "typeColor": { "image": "", "size": "wide", "text": "" },
-  "inWorld": { "image": "", "size": "wide", "text": "" },
-  "result": { "text": "" },
-  "system": { "image": "", "size": "wide", "text": "" },
+  "subject": {
+    "size": "tall",
+    "text": "Oksana Nazarevich is a psychologist and consultant whose work begins with conversation. The identity needed to reflect not only her profession, but the emotional movement her clients go through."
+  },
+  "difference": {
+    "size": "wide",
+    "text": "People rarely come into therapy with clear thoughts. More often, they arrive with emotions, fears and inner confusion that feel tangled and difficult to sort through alone."
+  },
+  "anchor": {
+    "size": "tall",
+    "text": "The core idea came from that exact moment of tension: tangled thoughts entering a conversation that helps untie them. Therapy becomes the space where confusion is spoken out, held, and gradually made clearer."
+  },
+  "identity": {
+    "size": "wide",
+    "text": "The identity was built to feel calm, human and emotionally intelligent. It does not dramatize struggle, but quietly suggests movement from inner complexity toward clarity."
+  },
+  "mark": {
+    "size": "square",
+    "text": "The logo combines a speech bubble with a tangled line, turning the mark into a direct metaphor for therapy itself. It captures the moment when confused inner thoughts enter a conversation and begin to take shape."
+  },
+  "typeColor": {
+    "size": "wide",
+    "text": "The color system moves from deep navy to light azure and white, echoing the feeling of rising from emotional depth toward air, light and calm. The gradient carries the psychological journey, while the thin linework keeps the identity gentle and open."
+  },
+  "inWorld": {
+    "size": "wide",
+    "text": "Across business cards and supporting visuals, the identity remains soft, recognizable and emotionally consistent. The mark, line language and gradient work together to create a system that feels both professional and reassuring."
+  },
+  "system": {
+    "size": "wide",
+    "text": "The entire identity grows from one simple idea: tangled thoughts can be brought into conversation and slowly untangled. It becomes a visual system that reflects the role of therapy itself — helping a person move from overwhelm toward clarity."
+  },
   "more": [
-    { "name": "WHUN", "category": "Brand identity", "url": "whun.html", "image": "" },
-    { "name": "Ant Sport Health Academy", "category": "Brand identity", "url": "ant-sport-health-academy.html", "image": "" }
+    {
+      "name": "WHUN",
+      "category": "Brand identity",
+      "url": "whun.html"
+    },
+    {
+      "name": "Ant Sport Health Academy",
+      "category": "Brand identity",
+      "url": "ant-sport-health-academy.html"
+    }
   ]
 }
