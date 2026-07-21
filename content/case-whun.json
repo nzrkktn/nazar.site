@@ -1,6 +1,6 @@
 {
   "title": "WHUN",
-  "intro": "[ Intro — one honest paragraph. Who WHUN is, what they came with, what they wanted. ]",
+  "intro": "A clothing brand built around one question: who’s under the clothes?",
   "meta": {
     "year": "2026",
     "scope": "Positioning, Brand identity",
@@ -8,17 +8,48 @@
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
-  "subject": { "image": "", "size": "tall", "text": "" },
-  "difference": { "image": "", "size": "wide", "text": "" },
-  "anchor": { "image": "", "size": "tall", "text": "" },
-  "identity": { "image": "", "size": "wide", "text": "" },
-  "mark": { "image": "", "size": "square", "text": "" },
-  "typeColor": { "image": "", "size": "wide", "text": "" },
-  "inWorld": { "image": "", "size": "wide", "text": "" },
-  "result": { "text": "" },
-  "system": { "image": "", "size": "wide", "text": "" },
+  "subject": {
+    "size": "tall",
+    "text": "WHUN grew from a simple observation: every person you truly get to know is far more complex than what can be seen from the outside."
+  },
+  "difference": {
+    "size": "wide",
+    "text": "Clothing is one of the first things we notice, but it is only the surface. What matters is the person underneath — their story, beliefs and thoughts."
+  },
+  "anchor": {
+    "size": "tall",
+    "text": "The name WHUN was created from the phrase “Who is UNder the clothes?” It turns the brand’s central belief into a question: not what someone wears, but who is wearing it."
+  },
+  "identity": {
+    "size": "wide",
+    "text": "The identity needed to be recognizable without overshadowing the person. Its role was to support the wearer and the idea behind each drop, rather than become the main focus."
+  },
+  "mark": {
+    "size": "square",
+    "text": "The brand’s central question is compressed into four letters: WHUN. The question mark hints at the meaning beneath the name, while the bold, condensed and slanted type gives it a direct streetwear character."
+  },
+  "typeColor": {
+    "size": "wide",
+    "text": "Because the logo was never meant to dominate, a vivid green took on the role of the brand’s main recognition cue. It makes WHUN identifiable before the name is even read."
+  },
+  "inWorld": {
+    "size": "wide",
+    "text": "Each drop explores a different idea within the same identity. The wordmark, question and green signal connect the garments, labels, packaging and digital touchpoints."
+  },
+  "system": {
+    "size": "wide",
+    "text": "One question runs through the entire brand — from the name to every drop. WHUN can change what it says while remaining recognizable, with the person wearing it always at the center."
+  },
   "more": [
-    { "name": "Cranston Bible Chapel", "category": "Brand identity", "url": "cranston-bible-chapel.html", "image": "" },
-    { "name": "Ant Sport Health Academy", "category": "Brand identity", "url": "ant-sport-health-academy.html", "image": "" }
+    {
+      "name": "Cranston Bible Chapel",
+      "category": "Brand identity",
+      "url": "cranston-bible-chapel.html"
+    },
+    {
+      "name": "Ant Sport Health Academy",
+      "category": "Brand identity",
+      "url": "ant-sport-health-academy.html"
+    }
   ]
 }
