@@ -1,6 +1,6 @@
 {
   "title": "Tavita's Touch",
-  "intro": "Tavita's ceramics are precise in a way you rarely see by hand. The brand had to show that.",
+  "intro": "Every piece begins as a shapeless lump of clay. What makes it beautiful is one thing — her hands. The brand is built on that single truth: these aren't just ceramics, they're the imprint of her touch.",
   "meta": {
     "year": "2026",
     "scope": "Positioning, Brand identity",
@@ -9,57 +9,84 @@
     "liveUrl": "#"
   },
   "subject": {
-    "label": "THE SUBJECT",
+    "label": "THE RAW MATERIAL",
     "images": [
       {
-        "image": "/images/ChatGPT Image Jul 14 2026 (1)-1.png",
+        "image": "/images/ChatGPT Image Jul 20 2026.png",
         "ratio": "4:5"
       }
     ],
-    "text": "Hand-thrown ceramics, finished to near-machine precision."
+    "text": "It starts as nothing — a wet, shapeless lump. Every finished piece is just clay, plus her hands."
   },
   "difference": {
-    "label": "THE DIFFERENCE",
+    "label": "THE IDEA",
     "images": [
       {
-        "image": "/images/ChatGPT Image Jul 14 2026 from nzrkktn.png",
+        "image": "/images/ChatGPT Image Jul 20 2026 from nzrkktn.png",
         "ratio": "16:10"
       }
     ],
-    "text": "That precision is rare by hand. It's what makes her work hers."
+    "text": "The whole brand rests on one truth: the beauty isn't in the clay, it's in the touch. That's the name, and that's the strategy."
   },
   "anchor": {
     "label": "THE ANCHOR",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 20 2026 from nzrkktn (1).png",
+        "ratio": "4:5"
+      }
+    ],
+    "text": "Tavita is my wife. Watching her work, the idea — and the name that came with it — was obvious: she doesn't make objects, she leaves an imprint. The identity had to be that imprint too."
   },
   "identity": {
     "label": "THE IDENTITY",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 20 2026 from nzrkktn (2).png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "Tavita's Touch."
   },
   "mark": {
     "label": "THE MARK",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 14 2026 (4).png",
+        "ratio": "1:1"
+      }
+    ],
+    "text": "Two T's meeting like two hands closing around clay. One continuous line — the gesture of a touch, not a drawn letter."
   },
   "typeColor": {
     "label": "TYPE & COLOR",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 20 2026 (1).png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "A thin serif and a palette pulled straight from the clay. Restrained, exact — the mark of a hand in full control."
   },
   "inWorld": {
-    "label": "IN THE WORLD",
-    "images": [],
-    "text": ""
-  },
-  "result": {
-    "text": ""
+    "label": "IN THE MATERIAL",
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 14 2026 (1)-3.png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "On every piece, the mark is pressed into the clay — the last, most literal touch of her hand. The brand isn't printed on the work. It's left in it."
   },
   "system": {
     "label": "THE SYSTEM",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 20 2026 (2).png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "One idea, carried from the name to the mark to the stamp in the clay. A brand that means one thing, everywhere — and that's what makes it impossible to mistake."
   },
   "more": [
     {

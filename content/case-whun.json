@@ -1,6 +1,6 @@
 {
   "title": "WHUN",
-  "intro": "[ Intro — one honest paragraph. Who WHUN is, what they came with, what they wanted. ]",
+  "intro": "A clothing brand built around one question: who’s under the clothes?",
   "meta": {
     "year": "2026",
     "scope": "Positioning, Brand identity",
@@ -10,59 +10,94 @@
   },
   "subject": {
     "label": "THE SUBJECT",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (4).png",
+        "ratio": "4:5"
+      }
+    ],
+    "text": "WHUN grew from a simple observation: every person you truly get to know is far more complex than what can be seen from the outside."
   },
   "difference": {
     "label": "THE DIFFERENCE",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 (3)-3.png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "Clothing is one of the first things we notice, but it is only the surface. What matters is the person underneath — their story, beliefs and thoughts."
   },
   "anchor": {
     "label": "THE ANCHOR",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (6)-1.png",
+        "ratio": "4:5"
+      }
+    ],
+    "text": "The name WHUN was created from the phrase “Who is UNder the clothes?” It turns the brand’s central belief into a question: not what someone wears, but who is wearing it."
   },
   "identity": {
     "label": "THE IDENTITY",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (5).png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "The identity needed to be recognizable without overshadowing the person. Its role was to support the wearer and the idea behind each drop, rather than become the main focus."
   },
   "mark": {
     "label": "THE MARK",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (7)-1.png",
+        "ratio": "1:1"
+      }
+    ],
+    "text": "The brand’s central question is compressed into four letters: WHUN. The question mark hints at the meaning beneath the name, while the bold, condensed and slanted type gives it a direct streetwear character."
   },
   "typeColor": {
     "label": "TYPE & COLOR",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (8)-1.png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "Because the logo was never meant to dominate, a vivid green took on the role of the brand’s main recognition cue. It makes WHUN identifiable before the name is even read."
   },
   "inWorld": {
     "label": "IN THE WORLD",
-    "images": [],
-    "text": ""
-  },
-  "result": {
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (1).png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "Each drop explores a different idea within the same identity. The wordmark, question and green signal connect the garments, labels, packaging and digital touchpoints."
   },
   "system": {
     "label": "THE SYSTEM",
-    "images": [],
-    "text": ""
+    "images": [
+      {
+        "image": "/images/ChatGPT Image May 25 2026 (3)-4.png",
+        "ratio": "16:10"
+      }
+    ],
+    "text": "One question runs through the entire brand — from the name to every drop. WHUN can change what it says while remaining recognizable, with the person wearing it always at the center."
   },
   "more": [
     {
       "name": "Cranston Bible Chapel",
       "category": "Brand identity",
-      "url": "cranston-bible-chapel.html",
-      "image": ""
+      "url": "cranston-bible-chapel.html"
     },
     {
       "name": "Ant Sport Health Academy",
       "category": "Brand identity",
-      "url": "ant-sport-health-academy.html",
-      "image": ""
+      "url": "ant-sport-health-academy.html"
     }
   ]
 }
