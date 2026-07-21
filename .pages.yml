@@ -261,20 +261,24 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -283,20 +287,24 @@ content:
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -305,20 +313,24 @@ content:
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -327,20 +339,24 @@ content:
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -349,20 +365,24 @@ content:
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -371,20 +391,24 @@ content:
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -393,20 +417,24 @@ content:
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -423,20 +451,24 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -498,20 +530,24 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -520,20 +556,24 @@ content:
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -542,20 +582,24 @@ content:
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -564,20 +608,24 @@ content:
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -586,20 +634,24 @@ content:
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -608,20 +660,24 @@ content:
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -630,20 +686,24 @@ content:
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -660,20 +720,24 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -735,20 +799,24 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -757,20 +825,24 @@ content:
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -779,20 +851,24 @@ content:
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -801,20 +877,24 @@ content:
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -823,20 +903,24 @@ content:
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -845,20 +929,24 @@ content:
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -867,20 +955,24 @@ content:
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -897,20 +989,24 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -972,20 +1068,24 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -994,20 +1094,24 @@ content:
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1016,20 +1120,24 @@ content:
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1038,20 +1146,24 @@ content:
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1060,20 +1172,24 @@ content:
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1082,20 +1198,24 @@ content:
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1104,20 +1224,24 @@ content:
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text
@@ -1134,20 +1258,24 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: image
-            label: Зображення
-            type: image
-          - name: size
-            label: Формат
-            type: select
-            options:
-              values:
-                - value: tall
-                  label: Вертикальне (4:5)
-                - value: wide
-                  label: Широке (16:10)
-                - value: square
-                  label: Квадрат (1:1)
+          - name: label
+            label: Заголовок-підказка
+            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
+            type: string
+          - name: images
+            label: Зображення (від 1 до 3)
+            type: object
+            list:
+              min: 1
+              max: 3
+            fields:
+              - name: image
+                label: Фото
+                type: image
+              - name: ratio
+                label: Співвідношення сторін
+                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                type: string
           - name: text
             label: Текст
             type: text

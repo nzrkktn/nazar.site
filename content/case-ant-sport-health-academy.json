@@ -8,17 +8,61 @@
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
-  "subject": { "image": "", "size": "tall", "text": "" },
-  "difference": { "image": "", "size": "wide", "text": "" },
-  "anchor": { "image": "", "size": "tall", "text": "" },
-  "identity": { "image": "", "size": "wide", "text": "" },
-  "mark": { "image": "", "size": "square", "text": "" },
-  "typeColor": { "image": "", "size": "wide", "text": "" },
-  "inWorld": { "image": "", "size": "wide", "text": "" },
-  "result": { "text": "" },
-  "system": { "image": "", "size": "wide", "text": "" },
+  "subject": {
+    "label": "THE SUBJECT",
+    "images": [],
+    "text": ""
+  },
+  "difference": {
+    "label": "THE DIFFERENCE",
+    "images": [],
+    "text": ""
+  },
+  "anchor": {
+    "label": "THE ANCHOR",
+    "images": [],
+    "text": ""
+  },
+  "identity": {
+    "label": "THE IDENTITY",
+    "images": [],
+    "text": ""
+  },
+  "mark": {
+    "label": "THE MARK",
+    "images": [],
+    "text": ""
+  },
+  "typeColor": {
+    "label": "TYPE & COLOR",
+    "images": [],
+    "text": ""
+  },
+  "inWorld": {
+    "label": "IN THE WORLD",
+    "images": [],
+    "text": ""
+  },
+  "result": {
+    "text": ""
+  },
+  "system": {
+    "label": "THE SYSTEM",
+    "images": [],
+    "text": ""
+  },
   "more": [
-    { "name": "WHUN", "category": "Brand identity", "url": "whun.html", "image": "" },
-    { "name": "Cranston Bible Chapel", "category": "Brand identity", "url": "cranston-bible-chapel.html", "image": "" }
+    {
+      "name": "WHUN",
+      "category": "Brand identity",
+      "url": "whun.html",
+      "image": ""
+    },
+    {
+      "name": "Cranston Bible Chapel",
+      "category": "Brand identity",
+      "url": "cranston-bible-chapel.html",
+      "image": ""
+    }
   ]
 }

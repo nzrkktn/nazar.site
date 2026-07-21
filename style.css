@@ -496,7 +496,20 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .case-meta .v { font-weight: 500; }
 .case-meta .preview { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
 
-.case-right { display: flex; flex-direction: column; gap: clamp(20px,3vw,45px); }
+.case-right { display: flex; flex-direction: column; gap: clamp(64px,9vw,120px); }
+
+/* one block = its image(s) + its own text, grouped tightly so it reads
+   as a unit — the big gap that separates blocks lives on .case-right above */
+.case-block { display: flex; flex-direction: column; gap: clamp(20px,2.6vw,28px); }
+
+.case-media-group {
+  display: grid;
+  grid-template-columns: repeat(var(--n, 1), 1fr);
+  gap: 12px;
+}
+@media (max-width: 640px) {
+  .case-media-group { grid-template-columns: 1fr; }
+}
 .case-media {
   border-radius: 14px; overflow: hidden;
   background: #e9e9e9;
@@ -505,27 +518,25 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   color: #999; font-size: 0.82rem; letter-spacing: 0.05em;
 }
 [data-theme="dark"] .case-media { background: #222; color: #777; }
-.case-media.wide { aspect-ratio: 16 / 10; }
-.case-media.sq { aspect-ratio: 1 / 1; }
 
-/* case text blocks — three formats */
+/* case text blocks */
 .case-block-txt { max-width: 40em; }
 
-/* Format A: small muted label above the thesis */
+/* small muted eyebrow — a hint at what the block is about, editable per block */
 .cb-label {
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--grey);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
-/* Formats A & B: the big thesis line */
+/* the block's main thought — plain body copy, not a shouting headline */
 .cb-thesis {
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  font-weight: 600;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  font-weight: 400;
 }
 
 /* Format C: statement heading + smaller reveal */

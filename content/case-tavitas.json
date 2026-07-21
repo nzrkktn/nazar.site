@@ -9,22 +9,58 @@
     "liveUrl": "#"
   },
   "subject": {
-    "image": "/images/ChatGPT Image Jul 14 2026 (1)-1.png",
-    "size": "tall",
+    "label": "THE SUBJECT",
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 14 2026 (1)-1.png",
+        "ratio": "4:5"
+      }
+    ],
     "text": "Hand-thrown ceramics, finished to near-machine precision."
   },
   "difference": {
-    "image": "/images/ChatGPT Image Jul 14 2026 from nzrkktn.png",
-    "size": "wide",
+    "label": "THE DIFFERENCE",
+    "images": [
+      {
+        "image": "/images/ChatGPT Image Jul 14 2026 from nzrkktn.png",
+        "ratio": "16:10"
+      }
+    ],
     "text": "That precision is rare by hand. It's what makes her work hers."
   },
-  "anchor": { "image": "", "size": "tall", "text": "" },
-  "identity": { "image": "", "size": "wide", "text": "" },
-  "mark": { "image": "", "size": "square", "text": "" },
-  "typeColor": { "image": "", "size": "wide", "text": "" },
-  "inWorld": { "image": "", "size": "wide", "text": "" },
-  "result": { "text": "" },
-  "system": { "image": "", "size": "wide", "text": "" },
+  "anchor": {
+    "label": "THE ANCHOR",
+    "images": [],
+    "text": ""
+  },
+  "identity": {
+    "label": "THE IDENTITY",
+    "images": [],
+    "text": ""
+  },
+  "mark": {
+    "label": "THE MARK",
+    "images": [],
+    "text": ""
+  },
+  "typeColor": {
+    "label": "TYPE & COLOR",
+    "images": [],
+    "text": ""
+  },
+  "inWorld": {
+    "label": "IN THE WORLD",
+    "images": [],
+    "text": ""
+  },
+  "result": {
+    "text": ""
+  },
+  "system": {
+    "label": "THE SYSTEM",
+    "images": [],
+    "text": ""
+  },
   "more": [
     {
       "name": "WHUN",

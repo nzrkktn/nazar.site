@@ -209,30 +209,58 @@
     if (bb) {
       const cse = C.case || {};
       bb.innerHTML = '';
-      const renderMedia = b => {
-        if (!b || !b.image) return;
-        const d = document.createElement('div');
-        d.className = 'case-media rv' + (b.size === 'wide' ? ' wide' : b.size === 'square' ? ' sq' : '');
-        d.style.background = `center/cover no-repeat url("${b.image}")`;
-        bb.appendChild(d);
+
+      const parseRatio = r => {
+        const m = /^\s*(\d+(?:\.\d+)?)\s*:\s*(\d+(?:\.\d+)?)\s*$/.exec(r || '');
+        return m ? `${m[1]} / ${m[2]}` : '4 / 5';
       };
-      const renderText = (b, label) => {
+
+      const renderMediaGroup = b => {
+        const images = (b && b.images || []).filter(im => im && im.image);
+        if (!images.length) return null;
+        const group = document.createElement('div');
+        group.className = 'case-media-group';
+        group.style.setProperty('--n', images.length);
+        images.forEach(im => {
+          const d = document.createElement('div');
+          d.className = 'case-media';
+          d.style.aspectRatio = parseRatio(im.ratio);
+          d.style.background = `center/cover no-repeat url("${im.image}")`;
+          group.appendChild(d);
+        });
+        return group;
+      };
+
+      const renderText = (b, fallbackLabel) => {
         const text = ((b && b.text) || '').trim();
-        if (!text) return;
+        if (!text) return null;
         const s = document.createElement('section');
-        s.className = 'case-block-txt rv';
+        s.className = 'case-block-txt';
+        const label = ((b && b.label) || fallbackLabel || '').trim();
         if (label) {
           const l = document.createElement('div');
           l.className = 'cb-label';
           l.textContent = label;
           s.appendChild(l);
         }
-        const h = document.createElement('h2');
-        h.className = 'cb-thesis';
-        h.textContent = text;
-        s.appendChild(h);
-        bb.appendChild(s);
+        const p = document.createElement('p');
+        p.className = 'cb-thesis';
+        p.textContent = text;
+        s.appendChild(p);
+        return s;
       };
+
+      const renderBlock = (b, fallbackLabel) => {
+        const media = renderMediaGroup(b);
+        const text = renderText(b, fallbackLabel);
+        if (!media && !text) return;
+        const wrap = document.createElement('div');
+        wrap.className = 'case-block rv';
+        if (media) wrap.appendChild(media);
+        if (text) wrap.appendChild(text);
+        bb.appendChild(wrap);
+      };
+
       [
         ['subject', 'THE SUBJECT'],
         ['difference', 'THE DIFFERENCE'],
@@ -241,13 +269,14 @@
         ['mark', 'THE MARK'],
         ['typeColor', 'TYPE & COLOR'],
         ['inWorld', 'IN THE WORLD'],
-      ].forEach(([key, label]) => {
-        renderMedia(cse[key]);
-        renderText(cse[key], label);
-      });
-      renderText(cse.result, '');
-      renderMedia(cse.system);
-      renderText(cse.system, 'THE SYSTEM');
+      ].forEach(([key, label]) => renderBlock(cse[key], label));
+
+      const resultText = renderText(cse.result, '');
+      if (resultText) {
+        resultText.classList.add('rv');
+        bb.appendChild(resultText);
+      }
+      renderBlock(cse.system, 'THE SYSTEM');
     }
 
     // — case live link —
