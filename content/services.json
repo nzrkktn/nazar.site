@@ -25,8 +25,7 @@
         { "text": "Logo system — main, simplified, favicon", "highlight": false },
         { "text": "Colour & typography", "highlight": false },
         { "text": "Short diagnosis in the brief", "highlight": false },
-        { "text": "Mini brand guide + all files", "highlight": false },
-        { "text": "2 revision rounds included", "highlight": false }
+        { "text": "Mini brand guide + all files", "highlight": false }
       ],
       "button": "Choose Essential",
       "hero": false
@@ -41,8 +40,7 @@
         { "text": "Full Discovery & Positioning", "highlight": true },
         { "text": "Extended identity — patterns, graphic elements, spacing rules", "highlight": false },
         { "text": "Complete brand guide", "highlight": false },
-        { "text": "Applied to 3–4 touchpoints", "highlight": false },
-        { "text": "2 revision rounds included", "highlight": false }
+        { "text": "Applied to 3–4 touchpoints", "highlight": false }
       ],
       "button": "Choose Identity",
       "hero": true
@@ -56,8 +54,7 @@
         { "text": "Everything in Identity", "highlight": false },
         { "text": "Tone of voice & key messaging", "highlight": false },
         { "text": "6–8 touchpoints + social templates", "highlight": false },
-        { "text": "30 days of post-launch support", "highlight": false },
-        { "text": "2 revision rounds included", "highlight": false }
+        { "text": "30 days of post-launch support", "highlight": false }
       ],
       "button": "Choose Complete",
       "hero": false
