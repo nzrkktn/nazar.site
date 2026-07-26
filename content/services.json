@@ -1,12 +1,12 @@
 {
   "title": "Services & pricing",
-  "lede": "Every project starts with thinking, not decoration. You pay for two things: a point of view and the form that carries it. Pick where you want to start.",
+  "lede": "Every project starts with thinking, not decoration. You're paying for two things — a point of view, and the form that carries it.",
   "tiers": [
     {
       "flag": "Start here",
       "name": "Positioning Sprint",
       "price": "$750",
-      "forWho": "For owners still deciding. Diagnosis only — no design.",
+      "forWho": "For owners still deciding — clarity before commitment.",
       "features": [
         { "text": "Business, audience & competitor breakdown", "highlight": false },
         { "text": "Positioning document — \"the only ___ that ___\"", "highlight": true },
@@ -20,12 +20,13 @@
       "flag": "",
       "name": "Essential",
       "price": "$2,200",
-      "forWho": "For those who need to launch quickly.",
+      "forWho": "When you know who you are and need to look like it — fast.",
       "features": [
         { "text": "Logo system — main, simplified, favicon", "highlight": false },
         { "text": "Colour & typography", "highlight": false },
         { "text": "Short diagnosis in the brief", "highlight": false },
-        { "text": "Mini brand guide + all files", "highlight": false }
+        { "text": "Mini brand guide + all files", "highlight": false },
+        { "text": "2 revision rounds included", "highlight": false }
       ],
       "button": "Choose Essential",
       "hero": false
@@ -34,13 +35,14 @@
       "flag": "Most chosen",
       "name": "Identity",
       "price": "$4,200",
-      "forWho": "The core package — strategy and design, in full.",
+      "forWho": "The full build — strategy and identity, working as one.",
       "features": [
         { "text": "Everything in Essential", "highlight": false },
         { "text": "Full Discovery & Positioning", "highlight": true },
         { "text": "Extended identity — patterns, graphic elements, spacing rules", "highlight": false },
         { "text": "Complete brand guide", "highlight": false },
-        { "text": "Applied to 3–4 touchpoints", "highlight": false }
+        { "text": "Applied to 3–4 touchpoints", "highlight": false },
+        { "text": "2 revision rounds included", "highlight": false }
       ],
       "button": "Choose Identity",
       "hero": true
@@ -49,12 +51,13 @@
       "flag": "",
       "name": "Complete",
       "price": "$7,500",
-      "forWho": "For entering the market seriously.",
+      "forWho": "For entering a crowded market and refusing to blend in.",
       "features": [
         { "text": "Everything in Identity", "highlight": false },
         { "text": "Tone of voice & key messaging", "highlight": false },
         { "text": "6–8 touchpoints + social templates", "highlight": false },
-        { "text": "30 days of post-launch support", "highlight": false }
+        { "text": "30 days of post-launch support", "highlight": false },
+        { "text": "2 revision rounds included", "highlight": false }
       ],
       "button": "Choose Complete",
       "hero": false
