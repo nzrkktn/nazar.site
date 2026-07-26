@@ -231,18 +231,20 @@
         return group;
       };
 
-      const renderText = (b, fallbackLabel) => {
+      const renderLabel = (b, fallbackLabel) => {
+        const label = ((b && b.label) || fallbackLabel || '').trim();
+        if (!label) return null;
+        const l = document.createElement('div');
+        l.className = 'cb-label';
+        l.textContent = label;
+        return l;
+      };
+
+      const renderThesis = b => {
         const text = ((b && b.text) || '').trim();
         if (!text) return null;
         const s = document.createElement('section');
         s.className = 'case-block-txt';
-        const label = ((b && b.label) || fallbackLabel || '').trim();
-        if (label) {
-          const l = document.createElement('div');
-          l.className = 'cb-label';
-          l.textContent = label;
-          s.appendChild(l);
-        }
         const p = document.createElement('p');
         p.className = 'cb-thesis';
         p.textContent = text;
@@ -250,12 +252,15 @@
         return s;
       };
 
+      // order inside a block: label (hint) — image(s) — text (main thought)
       const renderBlock = (b, fallbackLabel) => {
+        const label = renderLabel(b, fallbackLabel);
         const media = renderMediaGroup(b);
-        const text = renderText(b, fallbackLabel);
-        if (!media && !text) return;
+        const text = renderThesis(b);
+        if (!label && !media && !text) return;
         const wrap = document.createElement('div');
         wrap.className = 'case-block rv';
+        if (label) wrap.appendChild(label);
         if (media) wrap.appendChild(media);
         if (text) wrap.appendChild(text);
         bb.appendChild(wrap);
@@ -271,7 +276,7 @@
         ['inWorld', 'IN THE WORLD'],
       ].forEach(([key, label]) => renderBlock(cse[key], label));
 
-      const resultText = renderText(cse.result, '');
+      const resultText = renderThesis(cse.result);
       if (resultText) {
         resultText.classList.add('rv');
         bb.appendChild(resultText);

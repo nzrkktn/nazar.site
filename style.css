@@ -528,7 +528,6 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--grey);
-  margin-bottom: 14px;
 }
 
 /* the block's main thought — plain body copy, not a shouting headline */
