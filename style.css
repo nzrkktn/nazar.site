@@ -115,7 +115,7 @@ img { display: block; max-width: 100%; }
   border: 0; border-radius: 999px;
   background: transparent;
   cursor: pointer;
-  color: var(--accent);
+  color: var(--ink);
   display: grid; place-items: center;
   transition: background 0.25s;
 }
@@ -657,6 +657,11 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
      space-between then collapses it to flex-start, landing on top of the
      page-logo pinned top-left. Force it to the right edge instead. */
   .topnav > .theme-btn { margin-left: auto; }
+  /* on the same pages, the button sits in normal nav flow while .page-logo
+     is pinned absolutely (top: panel-pad + panel-inset) — their tops don't
+     share a reference, so the button reads ~8px high of the logo's center.
+     Nudge it down to match. */
+  body:has(> .page-logo) .topnav > .theme-btn { margin-top: 8px; }
   .topnav ul {
     order: 3;
     flex-basis: 100%;
