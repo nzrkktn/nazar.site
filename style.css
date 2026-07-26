@@ -652,6 +652,11 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
     row-gap: 14px;
     margin-bottom: clamp(28px, 6vw, 48px);
   }
+  /* on pages without the split panel (e.g. Services), the theme button is
+     the only item left on the first row once the menu button is hidden —
+     space-between then collapses it to flex-start, landing on top of the
+     page-logo pinned top-left. Force it to the right edge instead. */
+  .topnav > .theme-btn { margin-left: auto; }
   .topnav ul {
     order: 3;
     flex-basis: 100%;
