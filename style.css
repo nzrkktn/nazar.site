@@ -493,8 +493,10 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .case { max-width: 1280px; margin: 0 auto; padding: clamp(28px,3vw,44px) var(--pad) 0; }
 
 /* mobile-only: first block's photo, hoisted above the nav to match the
-   photo-first rhythm every other page opens with (see .panel) */
-.case-hero-mobile { display: none; }
+   photo-first rhythm every other page opens with (see .panel). Reuses
+   .panel-topbar/.panel-logo/.panel-theme-btn so the overlaid logo + theme
+   toggle inherit the same white-on-photo styling and mobile behavior. */
+.case-hero-mobile { display: none; position: relative; }
 
 .case-nav { margin-bottom: clamp(40px,6vw,80px); }
 .case-nav .topnav { margin-bottom: 0; }
@@ -665,8 +667,12 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
     height: 34vh;
     margin-bottom: clamp(28px,6vw,44px);
     border-radius: var(--radius);
+    overflow: hidden;
   }
   .case-media-group--hero-dup { display: none; }
+  /* the hero's own panel-theme-btn takes over — drop the nav's copy,
+     same swap the .split layout does for .panel */
+  .case:has(.case-hero-mobile) .case-nav .topnav > .theme-btn { display: none; }
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
   :root { --panel-inset: 20px; }
