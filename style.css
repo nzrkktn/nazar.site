@@ -332,8 +332,12 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 
 /* ——————— ABOUT ——————— */
 
+.about-copy { margin-top: auto; margin-bottom: 40px; }
+.about-copy h1 { margin-bottom: 32px; }
 .about-copy .body-lg { max-width: none; font-size: clamp(0.9rem, 1.15vw, 1.05rem); }
+.about-copy .btns { margin-top: 36px; }
 
+[data-tags] { display: contents; }
 .tag-float {
   position: absolute;
   padding: 10px 20px;
@@ -375,6 +379,9 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 
 /* ——————— PROJECTS list ——————— */
 
+/* shared right-column wrapper on pages without a hero (Projects, Contact) */
+.page-body { margin-top: auto; margin-bottom: clamp(40px, 6vw, 72px); }
+
 .intro-lede { margin-bottom: clamp(40px, 6vw, 72px); }
 
 .proj-list { list-style: none; }
@@ -395,6 +402,12 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .proj-row .yr { color: var(--grey); font-variant-numeric: tabular-nums; }
 
 /* ——————— SERVICES / pricing ——————— */
+
+/* Services has no split panel, so its own header/footer carry the
+   spacing .content normally provides via the flex column */
+.svc-header { padding: clamp(28px,4vw,72px) var(--pad) 0; }
+.svc-header .topnav { margin-bottom: 0; }
+.svc-foot { margin-top: clamp(56px,7vw,90px); }
 
 .full { max-width: 1200px; margin: 0 auto; padding: clamp(40px,6vw,90px) var(--pad) clamp(70px,9vw,130px); }
 .svc-head { max-width: 46em; margin-bottom: clamp(44px,6vw,72px); }
@@ -483,6 +496,7 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .case-title { font-size: clamp(3rem,7vw,5.6rem); font-weight: 700; letter-spacing: -0.04em; line-height: 0.95; margin-bottom: 30px; }
 .case-title sup { font-size: 0.35em; vertical-align: super; }
 .case-intro { color: var(--grey); font-size: clamp(1.05rem,1.4vw,1.25rem); line-height: 1.5; max-width: 26em; margin-bottom: 44px; }
+.case-intro p + p { margin-top: 1em; }
 
 .case-meta { list-style: none; }
 .case-meta li {
@@ -552,6 +566,7 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   line-height: 1.55;
   max-width: 34em;
 }
+.cb-reveal + .cb-reveal { margin-top: 1em; }
 
 .more { max-width: 1280px; margin: clamp(60px,9vw,120px) auto 0; padding: clamp(60px,9vw,120px) var(--pad) clamp(40px,5vw,70px); border-top: 1px solid var(--line); }
 .more h2 { font-size: clamp(2.4rem,5vw,4rem); font-weight: 700; letter-spacing: -0.035em; margin-bottom: 44px; }
@@ -686,9 +701,3 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   .slide { transition: none; }
   .badge::before { animation: none; }
 }
-
-/* ——— content-engine additions ——— */
-[data-tags] { display: contents; }
-.case-intro { color: var(--grey); font-size: clamp(1.05rem,1.4vw,1.25rem); line-height: 1.5; max-width: 26em; margin-bottom: 44px; }
-.case-intro p + p { margin-top: 1em; }
-.cb-reveal + .cb-reveal { margin-top: 1em; }
