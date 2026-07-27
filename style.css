@@ -411,7 +411,7 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
    spacing .content normally provides via the flex column */
 .svc-header { padding: clamp(28px,4vw,72px) var(--pad) 0; }
 .svc-header .topnav { margin-bottom: 0; }
-.svc-foot { margin-top: clamp(56px,7vw,90px); }
+.site-foot.svc-foot { margin-top: clamp(56px,7vw,90px); }
 
 .full { max-width: 1200px; margin: 0 auto; padding: clamp(40px,6vw,90px) var(--pad) clamp(70px,9vw,130px); }
 .svc-head { max-width: 46em; margin-bottom: clamp(44px,6vw,72px); }
