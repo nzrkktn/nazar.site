@@ -10,17 +10,20 @@
     "title": "WHUN",
     "category": "Clothing Brand",
     "image": "/images/ChatGPT Image May 25 2026 (3)-1.jpg",
-    "url": "whun.html"
+    "url": "whun.html",
+    "logo": "/images/whun.png"
   },
   {
     "title": "Servant Barber",
     "category": "Barbershop",
-    "url": "cranston-bible-chapel.html"
+    "url": "cranston-bible-chapel.html",
+    "logo": "/images/ser.png"
   },
   {
     "title": "Ant ",
     "category": "Sport Health Academy",
     "image": "/images/ChatGPT Image Jul 15 2026 from nzrkktn-1.jpg",
-    "url": "ant-sport-health-academy.html"
+    "url": "ant-sport-health-academy.html",
+    "logo": "/images/ant.png"
   }
 ]
