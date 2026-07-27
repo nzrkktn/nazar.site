@@ -135,6 +135,10 @@ img { display: block; max-width: 100%; }
 .panel-logo img { display: block; height: 44px; width: auto; }
 .topnav > .site-logo { display: none; }
 
+/* About's mobile crop puts this corner over a bright window in the photo,
+   where the white mark disappears — swap to the black mark there only */
+.panel-logo .pl-black { display: none; }
+
 /* pages without a photo panel (Services) still need the logo somewhere —
    pin it in the same top-left spot the panel-topbar logo occupies
    elsewhere, so it doesn't relocate when navigating between pages */
@@ -655,6 +659,8 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
   :root { --panel-inset: 20px; }
   .panel-logo img, .page-logo img { height: 30px; }
   .panel-topbar .panel-theme-btn { display: grid; }
+  .about-panel-logo .pl-white { display: none; }
+  .about-panel-logo .pl-black { display: block; }
   /* equalize the photo -> nav -> badge -> headline rhythm to match the
      smallest of the three (the .content top padding, ~28px) */
   .hero-block { margin-top: 0; }
