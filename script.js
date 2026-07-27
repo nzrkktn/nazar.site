@@ -253,7 +253,7 @@
       };
 
       // order inside a block: label (hint) — image(s) — text (main thought)
-      const renderBlock = (b, fallbackLabel) => {
+      const renderBlock = (b, fallbackLabel, isFirst) => {
         const label = renderLabel(b, fallbackLabel);
         const media = renderMediaGroup(b);
         const text = renderThesis(b);
@@ -261,7 +261,13 @@
         const wrap = document.createElement('div');
         wrap.className = 'case-block rv';
         if (label) wrap.appendChild(label);
-        if (media) wrap.appendChild(media);
+        if (media) {
+          // the first block is usually just a cover photo — mirror the
+          // photo-first rhythm every other page opens with on mobile by
+          // duplicating it above the nav; hide the in-flow copy there
+          if (isFirst) media.classList.add('case-media-group--hero-dup');
+          wrap.appendChild(media);
+        }
         if (text) wrap.appendChild(text);
         bb.appendChild(wrap);
       };
@@ -274,7 +280,7 @@
         ['mark', 'THE MARK'],
         ['typeColor', 'TYPE & COLOR'],
         ['inWorld', 'IN THE WORLD'],
-      ].forEach(([key, label]) => renderBlock(cse[key], label));
+      ].forEach(([key, label], i) => renderBlock(cse[key], label, i === 0));
 
       const resultText = renderThesis(cse.result);
       if (resultText) {
@@ -282,6 +288,16 @@
         bb.appendChild(resultText);
       }
       renderBlock(cse.system, 'THE SYSTEM');
+
+      const existingHero = document.querySelector('.case-hero-mobile');
+      if (existingHero) existingHero.remove();
+      const heroImg = cse.subject && cse.subject.images && cse.subject.images[0] && cse.subject.images[0].image;
+      if (heroImg) {
+        const hero = document.createElement('div');
+        hero.className = 'case-hero-mobile';
+        hero.style.background = `center/cover no-repeat url("${heroImg}")`;
+        document.querySelector('.case').prepend(hero);
+      }
     }
 
     // — case live link —

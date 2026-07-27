@@ -491,6 +491,11 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 /* ——————— CASE (Bungee model) ——————— */
 
 .case { max-width: 1280px; margin: 0 auto; padding: clamp(28px,3vw,44px) var(--pad) 0; }
+
+/* mobile-only: first block's photo, hoisted above the nav to match the
+   photo-first rhythm every other page opens with (see .panel) */
+.case-hero-mobile { display: none; }
+
 .case-nav { margin-bottom: clamp(40px,6vw,80px); }
 .case-nav .topnav { margin-bottom: 0; }
 .case-nav .logo { margin-right: auto; font-size: 1.35rem; font-style: italic; font-weight: 600; }
@@ -654,6 +659,14 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
      supplies the gap below the photo, so keeping both double-counts it */
   .panel { position: relative; height: 34vh; padding-bottom: 0; }
   .content { min-height: auto; }
+
+  .case-hero-mobile {
+    display: block;
+    height: 34vh;
+    margin-bottom: clamp(28px,6vw,44px);
+    border-radius: var(--radius);
+  }
+  .case-media-group--hero-dup { display: none; }
 
   /* theme toggle moves onto the panel photo; nav becomes a scrollable pill row */
   :root { --panel-inset: 20px; }
