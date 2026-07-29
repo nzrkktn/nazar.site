@@ -20,26 +20,26 @@
   "difference": {
     "items": [
       {
-        "type": "heading",
-        "text": "The whole brand rests on one truth: the beauty isn't in the clay, it's in the touch. That's the name, and that's the strategy."
-      },
-      {
         "type": "image",
         "image": "/images/tt 4-1.png",
         "ratio": "4:3"
+      },
+      {
+        "type": "heading",
+        "text": "The whole brand rests on one truth: the beauty isn't in the clay, it's in the touch. That's the name, and that's the strategy."
       }
     ]
   },
   "anchor": {
     "items": [
       {
-        "type": "heading",
-        "text": "Watching Tavitaʼs work, the idea — and the name that came with it — was obvious: she doesn't make objects, she leaves an imprint. The identity had to be that imprint too."
-      },
-      {
         "type": "image",
         "image": "/images/tt 3-1.jpg",
         "ratio": "1:1"
+      },
+      {
+        "type": "heading",
+        "text": "Watching Tavitaʼs work, the idea — and the name that came with it — was obvious: she doesn't make objects, she leaves an imprint. The identity had to be that imprint too."
       }
     ]
   },
