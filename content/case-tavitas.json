@@ -21,8 +21,18 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/tt 2-3.jpg",
-        "ratio": "4:3"
+        "image": "/images/tt 12.jpg",
+        "ratio": "3:4"
+      },
+      {
+        "type": "image",
+        "image": "/images/tt 13.jpg",
+        "ratio": "3:4"
+      },
+      {
+        "type": "image",
+        "image": "/images/tt 14.jpg",
+        "ratio": "3:4"
       },
       {
         "type": "text",
