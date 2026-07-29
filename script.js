@@ -203,8 +203,10 @@
       }
     }
 
-    // — case page: fixed 8-step editorial structure (subject, difference,
-    // anchor, identity, mark, typeColor, inWorld, [result], system) —
+    // — case page: 8 editorial sections (subject, difference, anchor,
+    // identity, mark, typeColor, inWorld, [result], system), each holding
+    // an author-ordered list of heading/text/image items — drag-reorder
+    // in Pages CMS decides what shows first, last, or between photos —
     const bb = document.querySelector('[data-blocks]');
     if (bb) {
       const cse = C.case || {};
@@ -215,83 +217,87 @@
         return m ? `${m[1]} / ${m[2]}` : '4 / 5';
       };
 
-      const renderMediaGroup = b => {
-        const images = (b && b.images || []).filter(im => im && im.image);
-        if (!images.length) return null;
-        const group = document.createElement('div');
-        group.className = 'case-media-group';
-        group.style.setProperty('--n', images.length);
-        images.forEach(im => {
-          const d = document.createElement('div');
-          d.className = 'case-media';
-          d.style.aspectRatio = parseRatio(im.ratio);
-          d.style.background = `center/cover no-repeat url("${im.image}")`;
-          group.appendChild(d);
-        });
-        return group;
+      // consecutive image items lay out side by side (1-3 up); heading/text
+      // items render inline wherever they sit in the author's order
+      const renderItems = (items, markHeroDup) => {
+        const els = [];
+        let heroMarked = false;
+        let i = 0;
+        while (i < items.length) {
+          const it = items[i] || {};
+          if (it.type === 'image' && it.image) {
+            const run = [];
+            while (i < items.length && items[i].type === 'image' && items[i].image) {
+              run.push(items[i]);
+              i++;
+            }
+            const group = document.createElement('div');
+            group.className = 'case-media-group';
+            group.style.setProperty('--n', run.length);
+            run.forEach(im => {
+              const d = document.createElement('div');
+              d.className = 'case-media';
+              d.style.aspectRatio = parseRatio(im.ratio);
+              d.style.background = `center/cover no-repeat url("${im.image}")`;
+              group.appendChild(d);
+            });
+            // the first block's first photo is usually the cover — mirror
+            // the photo-first rhythm every other page opens with on mobile
+            // by duplicating it above the nav; hide the in-flow copy there
+            if (markHeroDup && !heroMarked) {
+              group.classList.add('case-media-group--hero-dup');
+              heroMarked = true;
+            }
+            els.push(group);
+            continue;
+          }
+          if (it.type === 'heading' && (it.text || '').trim()) {
+            const l = document.createElement('div');
+            l.className = 'cb-label';
+            l.textContent = it.text.trim();
+            els.push(l);
+          } else if (it.type === 'text' && (it.text || '').trim()) {
+            const s = document.createElement('section');
+            s.className = 'case-block-txt';
+            const p = document.createElement('p');
+            p.className = 'cb-thesis';
+            p.textContent = it.text.trim();
+            s.appendChild(p);
+            els.push(s);
+          }
+          i++;
+        }
+        return els;
       };
 
-      const renderLabel = (b, fallbackLabel) => {
-        const label = ((b && b.label) || fallbackLabel || '').trim();
-        if (!label) return null;
-        const l = document.createElement('div');
-        l.className = 'cb-label';
-        l.textContent = label;
-        return l;
-      };
-
-      const renderThesis = b => {
-        const text = ((b && b.text) || '').trim();
-        if (!text) return null;
-        const s = document.createElement('section');
-        s.className = 'case-block-txt';
-        const p = document.createElement('p');
-        p.className = 'cb-thesis';
-        p.textContent = text;
-        s.appendChild(p);
-        return s;
-      };
-
-      // order inside a block: label (hint) — image(s) — text (main thought)
-      const renderBlock = (b, fallbackLabel, isFirst) => {
-        const label = renderLabel(b, fallbackLabel);
-        const media = renderMediaGroup(b);
-        const text = renderThesis(b);
-        if (!label && !media && !text) return;
+      const renderBlock = (sec, isFirst) => {
+        const els = renderItems((sec && sec.items) || [], isFirst);
+        if (!els.length) return;
         const wrap = document.createElement('div');
         wrap.className = 'case-block rv';
-        if (label) wrap.appendChild(label);
-        if (media) {
-          // the first block is usually just a cover photo — mirror the
-          // photo-first rhythm every other page opens with on mobile by
-          // duplicating it above the nav; hide the in-flow copy there
-          if (isFirst) media.classList.add('case-media-group--hero-dup');
-          wrap.appendChild(media);
-        }
-        if (text) wrap.appendChild(text);
+        els.forEach(el => wrap.appendChild(el));
         bb.appendChild(wrap);
       };
 
-      [
-        ['subject', 'THE SUBJECT'],
-        ['difference', 'THE DIFFERENCE'],
-        ['anchor', 'THE ANCHOR'],
-        ['identity', 'THE IDENTITY'],
-        ['mark', 'THE MARK'],
-        ['typeColor', 'TYPE & COLOR'],
-        ['inWorld', 'IN THE WORLD'],
-      ].forEach(([key, label], i) => renderBlock(cse[key], label, i === 0));
+      ['subject', 'difference', 'anchor', 'identity', 'mark', 'typeColor', 'inWorld']
+        .forEach((key, i) => renderBlock(cse[key], i === 0));
 
-      const resultText = renderThesis(cse.result);
+      const resultText = ((cse.result && cse.result.text) || '').trim();
       if (resultText) {
-        resultText.classList.add('rv');
-        bb.appendChild(resultText);
+        const s = document.createElement('section');
+        s.className = 'case-block-txt rv';
+        const p = document.createElement('p');
+        p.className = 'cb-thesis';
+        p.textContent = resultText;
+        s.appendChild(p);
+        bb.appendChild(s);
       }
-      renderBlock(cse.system, 'THE SYSTEM');
+      renderBlock(cse.system, false);
 
       const existingHero = document.querySelector('.case-hero-mobile');
       if (existingHero) existingHero.remove();
-      const heroImg = cse.subject && cse.subject.images && cse.subject.images[0] && cse.subject.images[0].image;
+      const subjectItems = (cse.subject && cse.subject.items) || [];
+      const heroImg = (subjectItems.find(it => it.type === 'image' && it.image) || {}).image;
       if (heroImg) {
         const hero = document.createElement('div');
         hero.className = 'case-hero-mobile';

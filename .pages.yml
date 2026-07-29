@@ -261,183 +261,260 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: difference
         label: "02 · The Difference — правда про бренд"
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: anchor
         label: "03 · The Anchor — стратегічний якір"
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: identity
         label: "04 · The Identity — розкриття"
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: mark
         label: "05 · The Mark — знак"
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: typeColor
         label: "06 · Type & Color — голос"
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: inWorld
         label: "07 · In The World — застосування"
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: result
         label: "Результат (опційно, перед блоком 08)"
         description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
@@ -451,27 +528,38 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: more
         label: More projects (внизу)
         type: object
@@ -530,183 +618,260 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: difference
         label: "02 · The Difference — правда про бренд"
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: anchor
         label: "03 · The Anchor — стратегічний якір"
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: identity
         label: "04 · The Identity — розкриття"
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: mark
         label: "05 · The Mark — знак"
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: typeColor
         label: "06 · Type & Color — голос"
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: inWorld
         label: "07 · In The World — застосування"
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: result
         label: "Результат (опційно, перед блоком 08)"
         description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
@@ -720,27 +885,38 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: more
         label: More projects (внизу)
         type: object
@@ -799,183 +975,260 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: difference
         label: "02 · The Difference — правда про бренд"
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: anchor
         label: "03 · The Anchor — стратегічний якір"
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: identity
         label: "04 · The Identity — розкриття"
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: mark
         label: "05 · The Mark — знак"
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: typeColor
         label: "06 · Type & Color — голос"
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: inWorld
         label: "07 · In The World — застосування"
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: result
         label: "Результат (опційно, перед блоком 08)"
         description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
@@ -989,27 +1242,38 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: more
         label: More projects (внизу)
         type: object
@@ -1068,183 +1332,260 @@ content:
         description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: difference
         label: "02 · The Difference — правда про бренд"
         description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: anchor
         label: "03 · The Anchor — стратегічний якір"
         description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: identity
         label: "04 · The Identity — розкриття"
         description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: mark
         label: "05 · The Mark — знак"
         description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: typeColor
         label: "06 · Type & Color — голос"
         description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: inWorld
         label: "07 · In The World — застосування"
         description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: result
         label: "Результат (опційно, перед блоком 08)"
         description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
@@ -1258,27 +1599,38 @@ content:
         description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
         type: object
         fields:
-          - name: label
-            label: Заголовок-підказка
-            description: "Маленький підпис над текстом, напр. «THE SUBJECT». Підказує, про що блок."
-            type: string
-          - name: images
-            label: Зображення (від 1 до 3)
-            type: object
+          - name: items
+            label: Елементи блоку (перетягуй, щоб змінити порядок)
+            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            type: block
             list:
-              min: 1
-              max: 3
-            fields:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: heading
+                label: Заголовок (дрібний, сірий підпис)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: string
+              - name: text
+                label: Текст (абзац)
+                fields:
+                  - name: text
+                    label: Текст
+                    type: text
               - name: image
                 label: Фото
-                type: image
-              - name: ratio
-                label: Співвідношення сторін
-                description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
-                type: string
-          - name: text
-            label: Текст
-            type: text
+                fields:
+                  - name: image
+                    label: Файл
+                    type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
+                    type: string
       - name: more
         label: More projects (внизу)
         type: object

@@ -9,47 +9,71 @@
     "liveUrl": "#"
   },
   "subject": {
-    "label": "THE SUBJECT",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE SUBJECT"
+      }
+    ]
   },
   "difference": {
-    "label": "THE DIFFERENCE",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE DIFFERENCE"
+      }
+    ]
   },
   "anchor": {
-    "label": "THE ANCHOR",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE ANCHOR"
+      }
+    ]
   },
   "identity": {
-    "label": "THE IDENTITY",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE IDENTITY"
+      }
+    ]
   },
   "mark": {
-    "label": "THE MARK",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE MARK"
+      }
+    ]
   },
   "typeColor": {
-    "label": "TYPE & COLOR",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "TYPE & COLOR"
+      }
+    ]
   },
   "inWorld": {
-    "label": "IN THE WORLD",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "IN THE WORLD"
+      }
+    ]
   },
   "result": {
     "text": ""
   },
   "system": {
-    "label": "THE SYSTEM",
-    "images": [],
-    "text": ""
+    "items": [
+      {
+        "type": "heading",
+        "text": "THE SYSTEM"
+      }
+    ]
   },
   "more": [
     {
