@@ -257,13 +257,11 @@ content:
             label: URL посилання Live
             type: string
       - name: subject
-        label: "01 · The Subject — продукт / місце / люди"
-        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        label: "01 · The Subject"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -272,13 +270,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -291,16 +289,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: difference
-        label: "02 · The Difference — правда про бренд"
-        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        label: "02 · The Difference"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -309,13 +304,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -328,16 +323,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: anchor
-        label: "03 · The Anchor — стратегічний якір"
-        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        label: "03 · The Anchor"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -346,13 +338,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -365,16 +357,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: identity
-        label: "04 · The Identity — розкриття"
-        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        label: "04 · The Identity"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -383,13 +372,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -402,16 +391,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: mark
-        label: "05 · The Mark — знак"
-        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        label: "05 · The Mark"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -420,13 +406,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -439,16 +425,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: typeColor
-        label: "06 · Type & Color — голос"
-        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        label: "06 · Type & Color"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -457,13 +440,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -476,16 +459,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: inWorld
-        label: "07 · In The World — застосування"
-        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        label: "07 · In The World"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -494,13 +474,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -513,24 +493,20 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: result
-        label: "Результат (опційно, перед блоком 08)"
-        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        label: Результат
         type: object
         fields:
           - name: text
-            label: Текст (цитата/цифра)
+            label: Текст
             type: text
       - name: system
-        label: "08 · The System — закриття активом"
-        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        label: "08 · The System"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -539,13 +515,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -558,7 +534,6 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: more
         label: More projects (внизу)
@@ -614,13 +589,11 @@ content:
             label: URL посилання Live
             type: string
       - name: subject
-        label: "01 · The Subject — продукт / місце / люди"
-        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        label: "01 · The Subject"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -629,13 +602,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -648,16 +621,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: difference
-        label: "02 · The Difference — правда про бренд"
-        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        label: "02 · The Difference"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -666,13 +636,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -685,16 +655,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: anchor
-        label: "03 · The Anchor — стратегічний якір"
-        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        label: "03 · The Anchor"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -703,13 +670,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -722,16 +689,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: identity
-        label: "04 · The Identity — розкриття"
-        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        label: "04 · The Identity"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -740,13 +704,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -759,16 +723,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: mark
-        label: "05 · The Mark — знак"
-        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        label: "05 · The Mark"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -777,13 +738,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -796,16 +757,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: typeColor
-        label: "06 · Type & Color — голос"
-        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        label: "06 · Type & Color"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -814,13 +772,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -833,16 +791,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: inWorld
-        label: "07 · In The World — застосування"
-        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        label: "07 · In The World"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -851,13 +806,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -870,24 +825,20 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: result
-        label: "Результат (опційно, перед блоком 08)"
-        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        label: Результат
         type: object
         fields:
           - name: text
-            label: Текст (цитата/цифра)
+            label: Текст
             type: text
       - name: system
-        label: "08 · The System — закриття активом"
-        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        label: "08 · The System"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -896,13 +847,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -915,7 +866,6 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: more
         label: More projects (внизу)
@@ -971,13 +921,11 @@ content:
             label: URL посилання Live
             type: string
       - name: subject
-        label: "01 · The Subject — продукт / місце / люди"
-        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        label: "01 · The Subject"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -986,13 +934,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1005,16 +953,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: difference
-        label: "02 · The Difference — правда про бренд"
-        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        label: "02 · The Difference"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1023,13 +968,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1042,16 +987,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: anchor
-        label: "03 · The Anchor — стратегічний якір"
-        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        label: "03 · The Anchor"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1060,13 +1002,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1079,16 +1021,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: identity
-        label: "04 · The Identity — розкриття"
-        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        label: "04 · The Identity"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1097,13 +1036,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1116,16 +1055,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: mark
-        label: "05 · The Mark — знак"
-        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        label: "05 · The Mark"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1134,13 +1070,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1153,16 +1089,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: typeColor
-        label: "06 · Type & Color — голос"
-        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        label: "06 · Type & Color"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1171,13 +1104,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1190,16 +1123,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: inWorld
-        label: "07 · In The World — застосування"
-        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        label: "07 · In The World"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1208,13 +1138,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1227,24 +1157,20 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: result
-        label: "Результат (опційно, перед блоком 08)"
-        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        label: Результат
         type: object
         fields:
           - name: text
-            label: Текст (цитата/цифра)
+            label: Текст
             type: text
       - name: system
-        label: "08 · The System — закриття активом"
-        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        label: "08 · The System"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1253,13 +1179,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1272,7 +1198,6 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: more
         label: More projects (внизу)
@@ -1328,13 +1253,11 @@ content:
             label: URL посилання Live
             type: string
       - name: subject
-        label: "01 · The Subject — продукт / місце / люди"
-        description: "Візуал: найсильніший кадр самого бізнесу, без лого. Текст: одне речення, що вводить у світ бренду і містить гачок (напр. конфлікт на кшталт «hand-thrown + machine precision»)."
+        label: "01 · The Subject"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1343,13 +1266,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1362,16 +1285,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: difference
-        label: "02 · The Difference — правда про бренд"
-        description: "Візуал: деталь, що показує ту саму правду. Текст: що вирізняє цей бренд — не проти інших, а сам по собі. Тут живе дистинктивність."
+        label: "02 · The Difference"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1380,13 +1300,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1399,16 +1319,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: anchor
-        label: "03 · The Anchor — стратегічний якір"
-        description: "Візуал: щось про людину/суть за брендом. Текст: одна ідея, з якої виросло все рішення. Позиціонування у форматі «зайняте вільне місце»."
+        label: "03 · The Anchor"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1417,13 +1334,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1436,16 +1353,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: identity
-        label: "04 · The Identity — розкриття"
-        description: "Візуал: повноекранний лок-ап. Перша поява лого. Тиша, повітря. Текст: мінімум або нічого — «The identity.»"
+        label: "04 · The Identity"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1454,13 +1368,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1473,16 +1387,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: mark
-        label: "05 · The Mark — знак"
-        description: "Візуал: монограма/знак великим. Текст: що це і чому саме так — логіка форми."
+        label: "05 · The Mark"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1491,13 +1402,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1510,16 +1421,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: typeColor
-        label: "06 · Type & Color — голос"
-        description: "Візуал: шрифт + свотчі + застосування. Текст: чому цей голос несе позицію."
+        label: "06 · Type & Color"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1528,13 +1436,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1547,16 +1455,13 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: inWorld
-        label: "07 · In The World — застосування"
-        description: "Візуал: сітка мокапів/носіїв — де бренд живе. Текст: як система тримається на різних носіях."
+        label: "07 · In The World"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1565,13 +1470,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1584,24 +1489,20 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: result
-        label: "Результат (опційно, перед блоком 08)"
-        description: "Цитата або цифра з результатом — залиш порожнім, якщо ще нема."
+        label: Результат
         type: object
         fields:
           - name: text
-            label: Текст (цитата/цифра)
+            label: Текст
             type: text
       - name: system
-        label: "08 · The System — закриття активом"
-        description: "Візуал: найкрасивіший фінальний кадр. Текст: одне речення, що зводить усе до цінності — бренд як актив, що накопичується."
+        label: "08 · The System"
         type: object
         fields:
           - name: items
-            label: Елементи блоку (перетягуй, щоб змінити порядок)
-            description: "Заголовок, текст і фото — додавай скільки треба і став у будь-якому порядку: заголовок зверху, знизу, під фото — як тобі треба для цього блоку."
+            label: Елементи
             type: block
             list:
               collapsible:
@@ -1610,13 +1511,13 @@ content:
             blockKey: type
             blocks:
               - name: heading
-                label: Заголовок (дрібний, сірий підпис)
+                label: Заголовок
                 fields:
                   - name: text
                     label: Текст
                     type: string
               - name: text
-                label: Текст (абзац)
+                label: Текст
                 fields:
                   - name: text
                     label: Текст
@@ -1629,7 +1530,6 @@ content:
                     type: image
                   - name: ratio
                     label: Співвідношення сторін
-                    description: "Напр. 4:5, 1:1, 16:10, 3:4 — будь-яке W:H. Порожньо — 4:5."
                     type: string
       - name: more
         label: More projects (внизу)
