@@ -521,7 +521,7 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .case-meta .v { font-weight: 500; }
 .case-meta .preview { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
 
-.case-right { display: flex; flex-direction: column; gap: clamp(32px,4.5vw,60px); }
+.case-right { display: flex; flex-direction: column; gap: clamp(44px,6vw,85px); }
 
 /* one block = its image(s) + its own text, grouped tightly so it reads
    as a unit — the big gap that separates blocks lives on .case-right above */
