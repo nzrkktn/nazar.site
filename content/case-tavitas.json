@@ -47,7 +47,8 @@
     "items": [
       {
         "type": "gif",
-        "gif": "/images/Image 5271.gif"
+        "gif": "/images/Image 5271.gif",
+        "ratio": "4:3"
       }
     ]
   },
