@@ -58,6 +58,16 @@
       {
         "type": "text",
         "text": " "
+      },
+      {
+        "type": "image",
+        "image": "/images/tt 7-1.jpg",
+        "ratio": "1:1"
+      },
+      {
+        "type": "image",
+        "image": "/images/tt 9-1.jpg",
+        "ratio": "1:1"
       }
     ]
   },
