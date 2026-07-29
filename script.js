@@ -203,10 +203,10 @@
       }
     }
 
-    // — case page: 8 editorial sections (subject, difference, anchor,
-    // identity, mark, typeColor, inWorld, [result], system), each holding
-    // an author-ordered list of heading/text/image items — drag-reorder
-    // in Pages CMS decides what shows first, last, or between photos —
+    // — case page: an author-ordered list of blocks, each holding an
+    // author-ordered list of heading/text/image/video/gif items — drag-
+    // reorder in Pages CMS decides how many blocks there are, what order
+    // they're in, and what's inside each one —
     const bb = document.querySelector('[data-blocks]');
     if (bb) {
       const cse = C.case || {};
@@ -299,25 +299,13 @@
         bb.appendChild(wrap);
       };
 
-      ['subject', 'difference', 'anchor', 'identity', 'mark', 'typeColor', 'inWorld']
-        .forEach((key, i) => renderBlock(cse[key], i === 0));
-
-      const resultText = ((cse.result && cse.result.text) || '').trim();
-      if (resultText) {
-        const s = document.createElement('section');
-        s.className = 'case-block-txt rv';
-        const p = document.createElement('p');
-        p.className = 'cb-thesis';
-        p.textContent = resultText;
-        s.appendChild(p);
-        bb.appendChild(s);
-      }
-      renderBlock(cse.system, false);
+      const blocks = cse.blocks || [];
+      blocks.forEach((sec, i) => renderBlock(sec, i === 0));
 
       const existingHero = document.querySelector('.case-hero-mobile');
       if (existingHero) existingHero.remove();
-      const subjectItems = (cse.subject && cse.subject.items) || [];
-      const heroItem = subjectItems.find(isMediaItem);
+      const firstItems = (blocks[0] && blocks[0].items) || [];
+      const heroItem = firstItems.find(isMediaItem);
       if (heroItem) {
         const hero = document.createElement('div');
         hero.className = 'case-hero-mobile';

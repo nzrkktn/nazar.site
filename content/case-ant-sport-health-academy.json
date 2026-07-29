@@ -8,73 +8,72 @@
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
-  "subject": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE SUBJECT"
-      }
-    ]
-  },
-  "difference": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE DIFFERENCE"
-      }
-    ]
-  },
-  "anchor": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE ANCHOR"
-      }
-    ]
-  },
-  "identity": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE IDENTITY"
-      }
-    ]
-  },
-  "mark": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE MARK"
-      }
-    ]
-  },
-  "typeColor": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "TYPE & COLOR"
-      }
-    ]
-  },
-  "inWorld": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "IN THE WORLD"
-      }
-    ]
-  },
-  "result": {
-    "text": ""
-  },
-  "system": {
-    "items": [
-      {
-        "type": "heading",
-        "text": "THE SYSTEM"
-      }
-    ]
-  },
+  "blocks": [
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE SUBJECT"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE DIFFERENCE"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE ANCHOR"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE IDENTITY"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE MARK"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "TYPE & COLOR"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "IN THE WORLD"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "heading",
+          "text": "THE SYSTEM"
+        }
+      ]
+    }
+  ],
   "more": [
     {
       "name": "WHUN",
