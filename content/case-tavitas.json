@@ -69,8 +69,13 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/ChatGPT Image Jul 20 2026 (1).jpg",
-        "ratio": "16:10"
+        "image": "/images/ChatGPT Image Jul 29 2026 (7).png",
+        "ratio": "1:1"
+      },
+      {
+        "type": "image",
+        "image": "/images/ChatGPT Image Jul 29 2026 from nzrkktn (8).png",
+        "ratio": "1:1"
       },
       {
         "type": "text",
