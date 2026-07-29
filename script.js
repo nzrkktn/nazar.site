@@ -217,33 +217,48 @@
         return m ? `${m[1]} / ${m[2]}` : '4 / 5';
       };
 
-      // consecutive image items lay out side by side (1-3 up); heading/text
-      // items render inline wherever they sit in the author's order
+      const isMediaItem = it => (it.type === 'image' && it.image) || (it.type === 'video' && it.video);
+
+      // one media cell — a photo (background image) or a short looping
+      // animation (autoplaying muted video), sized the same either way
+      const buildMediaCell = it => {
+        if (it.type === 'video') {
+          const v = document.createElement('video');
+          v.className = 'case-media';
+          v.style.aspectRatio = parseRatio(it.ratio);
+          v.src = it.video;
+          v.autoplay = true; v.loop = true; v.muted = true; v.playsInline = true;
+          v.setAttribute('muted', ''); // iOS Safari needs the attribute, not just the property
+          return v;
+        }
+        const d = document.createElement('div');
+        d.className = 'case-media';
+        d.style.aspectRatio = parseRatio(it.ratio);
+        d.style.background = `center/cover no-repeat url("${it.image}")`;
+        return d;
+      };
+
+      // consecutive image/video items lay out side by side (1-3 up);
+      // heading/text items render inline wherever they sit in the order
       const renderItems = (items, markHeroDup) => {
         const els = [];
         let heroMarked = false;
         let i = 0;
         while (i < items.length) {
           const it = items[i] || {};
-          if (it.type === 'image' && it.image) {
+          if (isMediaItem(it)) {
             const run = [];
-            while (i < items.length && items[i].type === 'image' && items[i].image) {
+            while (i < items.length && isMediaItem(items[i])) {
               run.push(items[i]);
               i++;
             }
             const group = document.createElement('div');
             group.className = 'case-media-group';
             group.style.setProperty('--n', run.length);
-            run.forEach(im => {
-              const d = document.createElement('div');
-              d.className = 'case-media';
-              d.style.aspectRatio = parseRatio(im.ratio);
-              d.style.background = `center/cover no-repeat url("${im.image}")`;
-              group.appendChild(d);
-            });
-            // the first block's first photo is usually the cover — mirror
-            // the photo-first rhythm every other page opens with on mobile
-            // by duplicating it above the nav; hide the in-flow copy there
+            run.forEach(im => group.appendChild(buildMediaCell(im)));
+            // the first block's first photo/animation is usually the cover —
+            // mirror the photo-first rhythm every other page opens with on
+            // mobile by duplicating it above the nav; hide the in-flow copy
             if (markHeroDup && !heroMarked) {
               group.classList.add('case-media-group--hero-dup');
               heroMarked = true;
@@ -297,21 +312,30 @@
       const existingHero = document.querySelector('.case-hero-mobile');
       if (existingHero) existingHero.remove();
       const subjectItems = (cse.subject && cse.subject.items) || [];
-      const heroImg = (subjectItems.find(it => it.type === 'image' && it.image) || {}).image;
-      if (heroImg) {
+      const heroItem = subjectItems.find(isMediaItem);
+      if (heroItem) {
         const hero = document.createElement('div');
         hero.className = 'case-hero-mobile';
-        hero.style.background = `center/cover no-repeat url("${heroImg}")`;
+        if (heroItem.type === 'video') {
+          const v = document.createElement('video');
+          v.className = 'case-hero-mobile-media';
+          v.src = heroItem.video;
+          v.autoplay = true; v.loop = true; v.muted = true; v.playsInline = true;
+          v.setAttribute('muted', '');
+          hero.appendChild(v);
+        } else {
+          hero.style.background = `center/cover no-repeat url("${heroItem.image}")`;
+        }
         // same topbar markup as every other page's .panel-inner, so the
         // logo + theme toggle inherit their white-on-photo styling as-is
-        hero.innerHTML =
+        hero.insertAdjacentHTML('beforeend',
           '<div class="panel-topbar">' +
           '<a class="panel-logo" href="index.html"><img src="images/circle-buro-logo-white.png" alt="Circle Buro"></a>' +
           '<button class="theme-btn panel-theme-btn" aria-label="Toggle theme">' +
           '<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>' +
           '<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>' +
           '</button>' +
-          '</div>';
+          '</div>');
         document.querySelector('.case').prepend(hero);
       }
     }

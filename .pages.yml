@@ -1,7 +1,7 @@
 media:
   input: images
   output: /images
-  categories: [image]
+  categories: [image, video]
 
 content:
   - name: site
@@ -290,6 +290,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -321,6 +330,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -358,6 +376,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -389,6 +416,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -426,6 +462,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -460,6 +505,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -491,6 +545,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -532,6 +595,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -622,6 +694,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -653,6 +734,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -690,6 +780,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -721,6 +820,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -758,6 +866,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -792,6 +909,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -823,6 +949,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -864,6 +999,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -954,6 +1098,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -985,6 +1138,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1022,6 +1184,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -1053,6 +1224,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1090,6 +1270,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -1124,6 +1313,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -1155,6 +1353,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1196,6 +1403,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1286,6 +1502,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -1317,6 +1542,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1354,6 +1588,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -1385,6 +1628,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1422,6 +1674,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -1456,6 +1717,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -1487,6 +1757,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
@@ -1528,6 +1807,15 @@ content:
                   - name: image
                     label: Файл
                     type: image
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: video
+                label: Анімація (відео)
+                fields:
+                  - name: video
+                    label: Файл (mp4 або webm)
+                    type: file
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
