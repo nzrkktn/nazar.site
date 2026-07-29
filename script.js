@@ -217,10 +217,15 @@
         return m ? `${m[1]} / ${m[2]}` : '4 / 5';
       };
 
-      const isMediaItem = it => (it.type === 'image' && it.image) || (it.type === 'video' && it.video);
+      const isMediaItem = it =>
+        (it.type === 'image' && it.image) || (it.type === 'video' && it.video) || (it.type === 'gif' && it.gif);
 
-      // one media cell — a photo (background image) or a short looping
-      // animation (autoplaying muted video), sized the same either way
+      // the still image the hero/poster falls back to for a given item
+      const mediaImageUrl = it => it.type === 'gif' ? it.gif : it.image;
+
+      // one media cell — a photo, a GIF (both plain background images —
+      // GIFs animate on their own), or a short looping animation
+      // (autoplaying muted video) — all sized the same way
       const buildMediaCell = it => {
         if (it.type === 'video') {
           const v = document.createElement('video');
@@ -234,7 +239,7 @@
         const d = document.createElement('div');
         d.className = 'case-media';
         d.style.aspectRatio = parseRatio(it.ratio);
-        d.style.background = `center/cover no-repeat url("${it.image}")`;
+        d.style.background = `center/cover no-repeat url("${mediaImageUrl(it)}")`;
         return d;
       };
 
@@ -324,7 +329,7 @@
           v.setAttribute('muted', '');
           hero.appendChild(v);
         } else {
-          hero.style.background = `center/cover no-repeat url("${heroItem.image}")`;
+          hero.style.background = `center/cover no-repeat url("${mediaImageUrl(heroItem)}")`;
         }
         // same topbar markup as every other page's .panel-inner, so the
         // logo + theme toggle inherit their white-on-photo styling as-is

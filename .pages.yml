@@ -299,6 +299,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -338,6 +347,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -385,6 +403,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -424,6 +451,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -471,6 +507,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -514,6 +559,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -553,6 +607,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -603,6 +666,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -703,6 +775,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -742,6 +823,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -789,6 +879,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -828,6 +927,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -875,6 +983,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -918,6 +1035,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -957,6 +1083,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1007,6 +1142,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1107,6 +1251,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -1146,6 +1299,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1193,6 +1355,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -1232,6 +1403,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1279,6 +1459,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -1322,6 +1511,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -1361,6 +1559,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1411,6 +1618,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1511,6 +1727,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: difference
         label: "02 · The Difference"
         type: object
@@ -1550,6 +1775,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1597,6 +1831,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: identity
         label: "04 · The Identity"
         type: object
@@ -1636,6 +1879,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1683,6 +1935,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: typeColor
         label: "06 · Type & Color"
         type: object
@@ -1726,6 +1987,15 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
       - name: inWorld
         label: "07 · In The World"
         type: object
@@ -1765,6 +2035,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
@@ -1815,6 +2094,15 @@ content:
                 fields:
                   - name: video
                     label: Файл (mp4 або webm)
+                    type: file
+                  - name: ratio
+                    label: Співвідношення сторін
+                    type: string
+              - name: gif
+                label: GIF
+                fields:
+                  - name: gif
+                    label: Файл (gif)
                     type: file
                   - name: ratio
                     label: Співвідношення сторін
