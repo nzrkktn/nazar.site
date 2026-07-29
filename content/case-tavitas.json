@@ -12,7 +12,7 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/tt 1-3.png",
+        "image": "/images/tt 1.jpg",
         "ratio": "1:1"
       }
     ]
@@ -21,7 +21,7 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/tt 4-1.png",
+        "image": "/images/tt 2.jpg",
         "ratio": "4:3"
       },
       {
@@ -34,7 +34,7 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/tt 3-1.jpg",
+        "image": "/images/tt 3-2.jpg",
         "ratio": "1:1"
       },
       {
@@ -47,7 +47,7 @@
     "items": [
       {
         "type": "image",
-        "image": "/images/tt 7_4-3-2.png",
+        "image": "/images/tt 4.jpg",
         "ratio": "4:3"
       },
       {
@@ -56,7 +56,7 @@
       },
       {
         "type": "image",
-        "image": "/images/tt logo 4х3.png",
+        "image": "/images/tt 5.jpg",
         "ratio": "4:3"
       },
       {
