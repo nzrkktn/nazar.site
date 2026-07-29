@@ -51,6 +51,10 @@
     "label": " ",
     "images": [
       {
+        "image": "/images/tt logo.png",
+        "ratio": "1:1"
+      },
+      {
         "image": "/images/tt 5.png",
         "ratio": "1:1"
       }
