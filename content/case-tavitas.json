@@ -41,6 +41,10 @@
     "label": "THE IDENTITY",
     "images": [
       {
+        "image": "/images/tt mark.png",
+        "ratio": "1:1"
+      },
+      {
         "image": "/images/tt 6.png",
         "ratio": "4:3"
       }
