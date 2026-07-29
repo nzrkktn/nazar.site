@@ -22,17 +22,12 @@
       {
         "type": "image",
         "image": "/images/tt 12.jpg",
-        "ratio": "3:4"
-      },
-      {
-        "type": "image",
-        "image": "/images/tt 13.jpg",
-        "ratio": "3:4"
+        "ratio": "1:1"
       },
       {
         "type": "image",
         "image": "/images/tt 14.jpg",
-        "ratio": "3:4"
+        "ratio": "1:1"
       },
       {
         "type": "text",
