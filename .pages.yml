@@ -312,6 +312,8 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: break
+                label: Новий ряд (розділяє фото на рядки)
       - name: more
         label: More projects (внизу)
         type: object
@@ -421,6 +423,8 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: break
+                label: Новий ряд (розділяє фото на рядки)
       - name: more
         label: More projects (внизу)
         type: object
@@ -530,6 +534,8 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: break
+                label: Новий ряд (розділяє фото на рядки)
       - name: more
         label: More projects (внизу)
         type: object
@@ -639,6 +645,8 @@ content:
                   - name: ratio
                     label: Співвідношення сторін
                     type: string
+              - name: break
+                label: Новий ряд (розділяє фото на рядки)
       - name: more
         label: More projects (внизу)
         type: object

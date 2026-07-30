@@ -527,6 +527,10 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
    as a unit — the big gap that separates blocks lives on .case-right above */
 .case-block { display: flex; flex-direction: column; gap: clamp(20px,2.6vw,28px); }
 
+/* several case-media-group rows stacked with the exact same gap that
+   separates photos within a row — used when a "break" item splits one
+   photo set into rows (e.g. 2 up, then 3 up) */
+.case-media-rows { display: flex; flex-direction: column; gap: 12px; }
 .case-media-group {
   display: grid;
   grid-template-columns: repeat(var(--n, 1), 1fr);

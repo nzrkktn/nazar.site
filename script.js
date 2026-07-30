@@ -243,7 +243,12 @@
         return d;
       };
 
-      // consecutive image/video items lay out side by side (1-3 up);
+      const isMediaOrBreak = it => isMediaItem(it) || it.type === 'break';
+
+      // consecutive image/video items lay out side by side (1-3 up); a
+      // "break" item splits them into separate rows (e.g. 2 up, then 3 up)
+      // with the exact same gap as between photos, instead of falling back
+      // to the bigger gap that separates unrelated block content
       // heading/text items render inline wherever they sit in the order
       const renderItems = (items, markHeroDup) => {
         const els = [];
@@ -251,24 +256,40 @@
         let i = 0;
         while (i < items.length) {
           const it = items[i] || {};
-          if (isMediaItem(it)) {
-            const run = [];
-            while (i < items.length && isMediaItem(items[i])) {
-              run.push(items[i]);
+          if (isMediaOrBreak(it)) {
+            const rows = [[]];
+            while (i < items.length && isMediaOrBreak(items[i])) {
+              if (items[i].type === 'break') {
+                if (rows[rows.length - 1].length) rows.push([]);
+              } else {
+                rows[rows.length - 1].push(items[i]);
+              }
               i++;
             }
-            const group = document.createElement('div');
-            group.className = 'case-media-group';
-            group.style.setProperty('--n', run.length);
-            run.forEach(im => group.appendChild(buildMediaCell(im)));
+            const nonEmptyRows = rows.filter(row => row.length);
+            if (!nonEmptyRows.length) continue; // stray break(s), nothing around them
+            const groups = nonEmptyRows.map(row => {
+              const group = document.createElement('div');
+              group.className = 'case-media-group';
+              group.style.setProperty('--n', row.length);
+              row.forEach(im => group.appendChild(buildMediaCell(im)));
+              return group;
+            });
             // the first block's first photo/animation is usually the cover —
             // mirror the photo-first rhythm every other page opens with on
             // mobile by duplicating it above the nav; hide the in-flow copy
             if (markHeroDup && !heroMarked) {
-              group.classList.add('case-media-group--hero-dup');
+              groups[0].classList.add('case-media-group--hero-dup');
               heroMarked = true;
             }
-            els.push(group);
+            if (groups.length > 1) {
+              const rowsWrap = document.createElement('div');
+              rowsWrap.className = 'case-media-rows';
+              groups.forEach(g => rowsWrap.appendChild(g));
+              els.push(rowsWrap);
+            } else {
+              els.push(groups[0]);
+            }
             continue;
           }
           if (it.type === 'heading' && (it.text || '').trim()) {
