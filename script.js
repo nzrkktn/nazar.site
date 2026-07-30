@@ -279,10 +279,13 @@
           } else if (it.type === 'text' && (it.text || '').trim()) {
             const s = document.createElement('section');
             s.className = 'case-block-txt';
-            const p = document.createElement('p');
-            p.className = 'cb-thesis';
-            p.textContent = it.text.trim();
-            s.appendChild(p);
+            // blank line = new paragraph, same convention as About/Intro
+            splitParas(it.text).forEach(t => {
+              const p = document.createElement('p');
+              p.className = 'cb-thesis';
+              p.textContent = t;
+              s.appendChild(p);
+            });
             els.push(s);
           }
           i++;
