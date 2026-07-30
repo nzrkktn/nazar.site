@@ -110,17 +110,33 @@
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE SYSTEM"
-        },
-        {
           "type": "image",
-          "image": "/images/ChatGPT Image Jul 20 2026 (2).jpg",
-          "ratio": "16:10"
+          "image": "/images/tt 9-3.jpg",
+          "ratio": "1:1"
         },
         {
           "type": "text",
           "text": "One idea, carried from the name to the mark to the stamp in the clay. A brand that means one thing, everywhere — and that's what makes it impossible to mistake."
+        },
+        {
+          "type": "image",
+          "image": "/images/tt 10.jpg",
+          "ratio": "1:1"
+        },
+        {
+          "type": "image",
+          "image": "/images/tt 8-2.jpg",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/tt 13-1.jpg",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/tt 16.jpg",
+          "ratio": "3:4"
         }
       ]
     }
