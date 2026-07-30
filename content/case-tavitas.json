@@ -115,13 +115,13 @@
           "ratio": "1:1"
         },
         {
-          "type": "text",
-          "text": "One idea, carried from the name to the mark to the stamp in the clay. A brand that means one thing, everywhere — and that's what makes it impossible to mistake."
-        },
-        {
           "type": "image",
           "image": "/images/tt 10.jpg",
           "ratio": "1:1"
+        },
+        {
+          "type": "text",
+          "text": " "
         },
         {
           "type": "image",
@@ -137,6 +137,10 @@
           "type": "image",
           "image": "/images/tt 16.jpg",
           "ratio": "3:4"
+        },
+        {
+          "type": "text",
+          "text": "One idea, carried from the name to the mark to the stamp in the clay. A brand that means one thing, everywhere — and that's what makes it impossible to mistake."
         }
       ]
     }
