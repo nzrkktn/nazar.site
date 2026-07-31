@@ -99,12 +99,36 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (6).png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "image",
+          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn.png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "break"
+        },
+        {
           "type": "text",
           "text": "One question, asked differently on every drop — always the same idea underneath.\nThat's the whole job: a brand distinct enough to survive changing completely from one release to the next."
         },
         {
           "type": "image",
-          "ratio": "1:1"
+          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (1).png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (5).png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/441473396_451397397348405_8547169562020960351_n (1).jpg",
+          "ratio": "3:4"
         }
       ]
     }
