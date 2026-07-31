@@ -10,6 +10,21 @@
     return String(v).split(/\n\s*\n/).map(t => t.trim()).filter(Boolean);
   }
 
+  // minimal, safe **bold**/*italic*/_italic_ markdown -> <strong>/<em>,
+  // built as real DOM nodes (no innerHTML) from the CMS rich-text field
+  function renderInline(text, parent) {
+    const re = /\*\*(.+?)\*\*|\*(.+?)\*|_(.+?)_/g;
+    let last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) parent.appendChild(document.createTextNode(text.slice(last, m.index)));
+      const el = document.createElement(m[1] !== undefined ? 'strong' : 'em');
+      el.textContent = m[1] !== undefined ? m[1] : (m[2] !== undefined ? m[2] : m[3]);
+      parent.appendChild(el);
+      last = re.lastIndex;
+    }
+    if (last < text.length) parent.appendChild(document.createTextNode(text.slice(last)));
+  }
+
   function setBg(el, src, placeholder) {
     if (el.dataset.ph == null) el.dataset.ph = el.textContent; // remember placeholder once
     if (src) {
@@ -39,7 +54,7 @@
       splitParas(v).forEach(t => {
         const p = document.createElement('p');
         if (cls) p.className = cls;
-        p.textContent = t;
+        renderInline(t, p);
         box.appendChild(p);
       });
     });
@@ -304,7 +319,7 @@
             splitParas(it.text).forEach(t => {
               const p = document.createElement('p');
               p.className = 'cb-thesis';
-              p.textContent = t;
+              renderInline(t, p);
               s.appendChild(p);
             });
             els.push(s);

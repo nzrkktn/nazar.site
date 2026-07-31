@@ -84,8 +84,10 @@ content:
         type: string
       - name: text
         label: Текст
-        description: Порожній рядок — новий абзац. Абзаців може бути скільки завгодно.
-        type: text
+        description: Порожній рядок — новий абзац. Абзаців може бути скільки завгодно. Виділяй жирним/курсивом просто в тексті.
+        type: rich-text
+        options:
+          toolbar: [bold, italic]
       - name: tags
         label: Теги на фото (до 3)
         type: string
@@ -235,8 +237,10 @@ content:
         type: string
       - name: intro
         label: Інтро (зліва, під назвою)
-        description: Порожній рядок — новий абзац.
-        type: text
+        description: Порожній рядок — новий абзац. Виділяй жирним/курсивом просто в тексті.
+        type: rich-text
+        options:
+          toolbar: [bold, italic]
       - name: meta
         label: Мета-таблиця
         type: object
@@ -284,7 +288,9 @@ content:
                 fields:
                   - name: text
                     label: Текст
-                    type: text
+                    type: rich-text
+                    options:
+                      toolbar: [bold, italic]
               - name: image
                 label: Фото
                 fields:
@@ -346,8 +352,10 @@ content:
         type: string
       - name: intro
         label: Інтро (зліва, під назвою)
-        description: Порожній рядок — новий абзац.
-        type: text
+        description: Порожній рядок — новий абзац. Виділяй жирним/курсивом просто в тексті.
+        type: rich-text
+        options:
+          toolbar: [bold, italic]
       - name: meta
         label: Мета-таблиця
         type: object
@@ -395,7 +403,9 @@ content:
                 fields:
                   - name: text
                     label: Текст
-                    type: text
+                    type: rich-text
+                    options:
+                      toolbar: [bold, italic]
               - name: image
                 label: Фото
                 fields:
@@ -457,8 +467,10 @@ content:
         type: string
       - name: intro
         label: Інтро (зліва, під назвою)
-        description: Порожній рядок — новий абзац.
-        type: text
+        description: Порожній рядок — новий абзац. Виділяй жирним/курсивом просто в тексті.
+        type: rich-text
+        options:
+          toolbar: [bold, italic]
       - name: meta
         label: Мета-таблиця
         type: object
@@ -506,7 +518,9 @@ content:
                 fields:
                   - name: text
                     label: Текст
-                    type: text
+                    type: rich-text
+                    options:
+                      toolbar: [bold, italic]
               - name: image
                 label: Фото
                 fields:
@@ -568,8 +582,10 @@ content:
         type: string
       - name: intro
         label: Інтро (зліва, під назвою)
-        description: Порожній рядок — новий абзац.
-        type: text
+        description: Порожній рядок — новий абзац. Виділяй жирним/курсивом просто в тексті.
+        type: rich-text
+        options:
+          toolbar: [bold, italic]
       - name: meta
         label: Мета-таблиця
         type: object
@@ -617,7 +633,9 @@ content:
                 fields:
                   - name: text
                     label: Текст
-                    type: text
+                    type: rich-text
+                    options:
+                      toolbar: [bold, italic]
               - name: image
                 label: Фото
                 fields:
