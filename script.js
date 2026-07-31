@@ -10,15 +10,26 @@
     return String(v).split(/\n\s*\n/).map(t => t.trim()).filter(Boolean);
   }
 
-  // minimal, safe **bold**/*italic*/_italic_ markdown -> <strong>/<em>,
-  // built as real DOM nodes (no innerHTML) from the CMS rich-text field
+  // minimal, safe markdown -> <strong>/<em>, built as real DOM nodes
+  // (no innerHTML) from the CMS rich-text field:
+  //   ***text*** / ___text___  -> bold + italic
+  //   **text**                -> bold
+  //   *text* / _text_         -> italic
   function renderInline(text, parent) {
-    const re = /\*\*(.+?)\*\*|\*(.+?)\*|_(.+?)_/g;
+    const re = /\*\*\*(.+?)\*\*\*|___(.+?)___|\*\*(.+?)\*\*|\*(.+?)\*|_(.+?)_/g;
     let last = 0, m;
     while ((m = re.exec(text))) {
       if (m.index > last) parent.appendChild(document.createTextNode(text.slice(last, m.index)));
-      const el = document.createElement(m[1] !== undefined ? 'strong' : 'em');
-      el.textContent = m[1] !== undefined ? m[1] : (m[2] !== undefined ? m[2] : m[3]);
+      let el;
+      if (m[1] !== undefined || m[2] !== undefined) {
+        el = document.createElement('strong');
+        const em = document.createElement('em');
+        em.textContent = m[1] !== undefined ? m[1] : m[2];
+        el.appendChild(em);
+      } else {
+        el = document.createElement(m[3] !== undefined ? 'strong' : 'em');
+        el.textContent = m[3] !== undefined ? m[3] : (m[4] !== undefined ? m[4] : m[5]);
+      }
       parent.appendChild(el);
       last = re.lastIndex;
     }
