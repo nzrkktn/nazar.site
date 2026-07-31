@@ -55,6 +55,11 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/w 8_3-4.png",
+          "ratio": "3:4"
+        },
+        {
           "type": "text",
           "text": "A bold, condensed wordmark with a slight lean — real streetwear rhythm, not decoration. It isn't built to lead. Every drop carries its own idea and execution, so the mark had to work quietly on some pieces and loud on others without losing itself. The question mark carries the meaning; the letterforms carry the attitude."
         }
