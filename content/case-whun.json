@@ -21,13 +21,12 @@
     {
       "items": [
         {
-          "type": "image",
-          "image": "/images/w 3-1.png",
-          "ratio": "4:3"
-        },
-        {
           "type": "text",
           "text": "Most brands you wear end up defining you to everyone else. ***WHUN*** starts from the opposite belief — the clothes are just how you carry what's underneath."
+        },
+        {
+          "type": "video",
+          "video": "/images/AQMeGzjAFkqPPpi60nDAVM3Dtsk_RTL3wzyBkAxb5Sa4syhh5Vg_0BRYtB6BqG6-1.mp4"
         }
       ]
     },
