@@ -79,8 +79,8 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/w 12.png",
-          "ratio": "1:1"
+          "image": "/images/w 15.png",
+          "ratio": "3:4"
         },
         {
           "type": "text",
