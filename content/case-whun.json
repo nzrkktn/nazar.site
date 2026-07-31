@@ -104,8 +104,9 @@
           "type": "break"
         },
         {
-          "type": "video",
-          "video": "/images/AQMeGzjAFkqPPpi60nDAVM3Dtsk_RTL3wzyBkAxb5Sa4syhh5Vg_0BRYtB6BqG6.mp4"
+          "type": "image",
+          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (6)-1.png",
+          "ratio": "3:4"
         },
         {
           "type": "image",
@@ -114,8 +115,7 @@
         },
         {
           "type": "video",
-          "video": "/images/AQMaVWUFdHO2WuAZOZB3_zhC78D3_LUDs_yggpk_KFcB7LdfbePKj6t6f1qRdE7.mp4",
-          "ratio": "3:4"
+          "video": "/images/AQMeGzjAFkqPPpi60nDAVM3Dtsk_RTL3wzyBkAxb5Sa4syhh5Vg_0BRYtB6BqG6.mp4"
         },
         {
           "type": "text",
