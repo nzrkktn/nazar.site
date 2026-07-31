@@ -47,6 +47,16 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/w 8_3-4-1.png",
+          "ratio": "4:3"
+        },
+        {
+          "type": "image",
+          "image": "/images/w 10-1.png",
+          "ratio": "4:3"
+        },
+        {
           "type": "text",
           "text": "The name ***WHUN*** was created from the phrase ***WH***o is ***UN***der the clothes?” It turns the brand’s central belief into a question: not what someone wears, but who is wearing it."
         }
