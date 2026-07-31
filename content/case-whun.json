@@ -101,6 +101,10 @@
         {
           "type": "text",
           "text": "One question, asked differently on every drop — always the same idea underneath.\nThat's the whole job: a brand distinct enough to survive changing completely from one release to the next."
+        },
+        {
+          "type": "image",
+          "ratio": "1:1"
         }
       ]
     }
