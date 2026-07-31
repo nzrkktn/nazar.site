@@ -109,13 +109,12 @@
         },
         {
           "type": "image",
-          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn-1.png",
+          "image": "/images/w 14.png",
           "ratio": "3:4"
         },
         {
-          "type": "image",
-          "image": "/images/w 14.png",
-          "ratio": "3:4"
+          "type": "video",
+          "video": "/images/AQNx2LRaspqZc1i2OLytmm0s6qmAKktYgyc0AgjTGsGKOuFmaKm584jqOl_gdshT4u8epKO85RR9I.mp4"
         },
         {
           "type": "text",
