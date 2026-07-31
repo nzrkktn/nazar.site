@@ -496,7 +496,7 @@
   if (caseFile) FILES.case = caseFile;
 
   Promise.all(Object.entries(FILES).map(([key, path]) =>
-    fetch(path).then(r => { if (!r.ok) throw new Error(path); return r.json(); }).then(v => [key, v])
+    fetch(path, { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(path); return r.json(); }).then(v => [key, v])
   ))
     .then(entries => {
       window.CONTENT = Object.fromEntries(entries);
