@@ -78,13 +78,13 @@
     {
       "items": [
         {
-          "type": "text",
-          "text": "A vivid green — the one constant across every drop, doing the job the mark can't always do: making ***WHUN*** recognizable at a glance. A bold, condensed typeface that stays the same everywhere it appears — labels, tags, packaging — same rhythm, different volume."
+          "type": "image",
+          "image": "/images/w 12.png",
+          "ratio": "1:1"
         },
         {
-          "type": "image",
-          "image": "/images/ChatGPT Image May 25 2026 from nzrkktn (8).png",
-          "ratio": "1:1"
+          "type": "text",
+          "text": "A vivid green — the one constant across every drop, doing the job the mark can't always do: making ***WHUN*** recognizable at a glance. A bold, condensed typeface that stays the same everywhere it appears — labels, tags, packaging — same rhythm, different volume."
         }
       ]
     },
