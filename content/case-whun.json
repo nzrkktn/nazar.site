@@ -41,6 +41,11 @@
         {
           "type": "text",
           "text": "Clothing is one of the first things we notice, but it is only the surface. What matters is the person underneath — their story, beliefs and thoughts."
+        },
+        {
+          "type": "image",
+          "image": "/images/w 6-1.png",
+          "ratio": "1:1"
         }
       ]
     },
