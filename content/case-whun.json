@@ -91,8 +91,8 @@
     {
       "items": [
         {
-          "type": "image",
-          "image": "/images/178832958_624191136_18079475879200740_2973411627909166079_n.jpg",
+          "type": "video",
+          "video": "/images/AQNx2LRaspqZc1i2OLytmm0s6qmAKktYgyc0AgjTGsGKOuFmaKm584jqOl_gdshT4u8epKO85RR9I.mp4",
           "ratio": "1:1"
         },
         {
@@ -109,12 +109,13 @@
         },
         {
           "type": "image",
-          "image": "/images/w 14.png",
-          "ratio": "3:4"
+          "image": "/images/178832958_624191136_18079475879200740_2973411627909166079_n.jpg",
+          "ratio": "4:3"
         },
         {
-          "type": "video",
-          "video": "/images/AQNx2LRaspqZc1i2OLytmm0s6qmAKktYgyc0AgjTGsGKOuFmaKm584jqOl_gdshT4u8epKO85RR9I.mp4"
+          "type": "image",
+          "image": "/images/w 14.png",
+          "ratio": "3:4"
         },
         {
           "type": "text",
