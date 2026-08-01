@@ -9,9 +9,27 @@
     "liveUrl": "#"
   },
   "blocks": [
-    {},
     {
       "items": [
+        {
+          "type": "image",
+          "image": "/images/ser 1.png",
+          "ratio": "1:1"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "type": "image",
+          "image": "/images/ser 2.png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 4.png",
+          "ratio": "3:4"
+        },
         {
           "type": "text",
           "text": "Anton started out cutting his friends' hair. A friend's haircut is never really about the hair — he already knew what to cut. It was about the half hour of talking, every time a continuation, not awkward small talk about nothing."
@@ -20,6 +38,11 @@
     },
     {
       "items": [
+        {
+          "type": "image",
+          "image": "/images/ser 5-1.png",
+          "ratio": "1:1"
+        },
         {
           "type": "text",
           "text": "Servant is serve and ant together: to serve, and Anton. The name holds both at once — the work itself, and the person doing it."
