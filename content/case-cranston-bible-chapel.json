@@ -13,7 +13,7 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/ser 1.png",
+          "image": "/images/ser 8.png",
           "ratio": "1:1"
         }
       ]
@@ -22,13 +22,13 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/ser 2.png",
-          "ratio": "3:4"
+          "image": "/images/ser 1-2.png",
+          "ratio": "1:1"
         },
         {
           "type": "image",
-          "image": "/images/ser 4.png",
-          "ratio": "3:4"
+          "image": "/images/ser 9.png",
+          "ratio": "1:1"
         },
         {
           "type": "text",
@@ -40,7 +40,7 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/Instagram Image.jpg",
+          "image": "/images/ser 7.png",
           "ratio": "1:1"
         },
         {
