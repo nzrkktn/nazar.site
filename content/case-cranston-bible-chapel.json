@@ -1,75 +1,68 @@
 {
   "title": "Servant Barber",
-  "intro": "[ Intro — one honest paragraph. Who Servant Barber is, what they came with, what they wanted. ]",
+  "intro": "Where were we?",
   "meta": {
-    "year": "2026",
-    "scope": "Positioning, Brand identity",
-    "timeline": "[ X weeks ]",
+    "year": "2025",
+    "scope": "Brand identity",
+    "timeline": "4 weeks",
     "liveLabel": "Preview +",
     "liveUrl": "#"
   },
   "blocks": [
+    {},
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE SUBJECT"
+          "type": "text",
+          "text": "Anton started out cutting his friends' hair. A friend's haircut is never really about the hair — he already knew what to cut. It was about the half hour of talking, every time a continuation, not awkward small talk about nothing."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE DIFFERENCE"
+          "type": "text",
+          "text": "Servant is serve and ant together: to serve, and Anton. The name holds both at once — the work itself, and the person doing it."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE ANCHOR"
+          "type": "text",
+          "text": "More clients came, the approach stayed the same. At most barbershops you start over every time — explain the fade you want, keep up the small talk. Here they already know you, and they know your cut."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE IDENTITY"
+          "type": "text",
+          "text": "\"Where were we?\" — the line Anton opens with when someone he knows sits down again. It works two ways at once: the hair, and the last thing you talked about. That line became the whole brand."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE MARK"
+          "type": "text",
+          "text": "Warm brown on near-black — quiet, not the shine of a sign demanding attention. A color that sits closer to calm and comfort than to display."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "TYPE & COLOR"
+          "type": "text",
+          "text": "The line lives wherever Anton speaks to a client — in a booking reminder, on the mirror, on the card. Not a slogan, just the way he actually talks."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "IN THE WORLD"
-        }
-      ]
-    },
-    {
-      "items": [
-        {
-          "type": "heading",
-          "text": "THE SYSTEM"
+          "type": "text",
+          "text": "Servant didn't invent a value, it kept one: cut a client the way you'd cut a friend, without starting from zero. Everything else — the mark, the color, the words — just holds that in place."
         }
       ]
     }
