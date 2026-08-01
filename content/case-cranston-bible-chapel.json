@@ -60,6 +60,16 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/ser 4-1.png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 2-1.png",
+          "ratio": "3:4"
+        },
+        {
           "type": "text",
           "text": "\"Where were we?\" — the line Anton opens with when someone he knows sits down again. It works two ways at once: the hair, and the last thing you talked about. That line became the whole brand."
         }
