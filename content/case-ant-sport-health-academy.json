@@ -21,13 +21,13 @@
     {
       "items": [
         {
-          "type": "text",
-          "text": "**Ant** is a gym with five disciplines under one roof. On paper that's a list of services — but people stay here because of the room, not the schedule. One ant is small; a colony moves what's bigger than itself. A fighter knows this: you step into the ring alone, but it's the gym that got you there."
-        },
-        {
           "type": "image",
           "image": "/images/Ant Image Compression.png",
           "ratio": "3:4"
+        },
+        {
+          "type": "text",
+          "text": "**Ant** is a gym with five disciplines under one roof. On paper that's a list of services — but people stay here because of the room, not the schedule. One ant is small; a colony moves what's bigger than itself. A fighter knows this: you step into the ring alone, but it's the gym that got you there."
         }
       ]
     },
