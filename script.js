@@ -248,14 +248,22 @@
         }
 
         const to = (C.site && C.site.email) || 'nzrkktn@gmail.com';
-        const subject = `New inquiry from ${name}`;
+        const subject = `New inquiry from ${name}${business ? ' — ' + business : ''}`;
+        const divider = '────────────────────';
         const body = [
-          `Name: ${name}`,
-          `Email: ${email}`,
-          `Business: ${business}`,
-          `Starting point: ${tier}`,
+          'NEW PROJECT INQUIRY',
+          divider,
           '',
-          message
+          `Name:            ${name}`,
+          `Email:           ${email}`,
+          `Business:        ${business || '—'}`,
+          `Starting point:  ${tier}`,
+          '',
+          'What they’re working on:',
+          message || '—',
+          '',
+          divider,
+          'Sent from the contact form on circleburo.com'
         ].join('\n');
         window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       });
