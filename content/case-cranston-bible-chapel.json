@@ -97,7 +97,7 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/ser 19.png",
+          "image": "/images/ser 18-1.png",
           "ratio": "4:3"
         },
         {
@@ -108,6 +108,11 @@
     },
     {
       "items": [
+        {
+          "type": "image",
+          "image": "/images/ser 20.png",
+          "ratio": "4:3"
+        },
         {
           "type": "text",
           "text": "The line lives wherever Anton speaks to a client — in a booking reminder, on the mirror, on the card. Not a slogan, just the way he actually talks."
