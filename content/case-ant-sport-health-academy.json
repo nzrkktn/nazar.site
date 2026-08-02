@@ -1,8 +1,8 @@
 {
-  "title": "Ant Sport Health Academy",
-  "intro": "[ Intro — one honest paragraph. Who Ant Sport Health Academy is, what they came with, what they wanted. ]",
+  "title": "Ant",
+  "intro": "Weights, fitness, Muay Thai, boxing, kickboxing — all under one roof. The name explains why it doesn't fall apart into a list.",
   "meta": {
-    "year": "2026",
+    "year": "2023",
     "scope": "Positioning, Brand identity",
     "timeline": "[ X weeks ]",
     "liveLabel": "Preview +",
@@ -12,64 +12,65 @@
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE SUBJECT"
+          "type": "image",
+          "ratio": "1:1"
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE DIFFERENCE"
+          "type": "text",
+          "text": "**ANT** has a weights floor, fitness training, and an academy of Muay Thai, boxing and kickboxing. On paper that's a list of services — the kind of gym that's usually about everything and about nothing."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE ANCHOR"
+          "type": "text",
+          "text": "What holds it together isn't the schedule. Most gyms sell a personal result — your body, your progress, you against yourself. People stay at **ANT** because of the room they train in."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE IDENTITY"
+          "type": "text",
+          "text": "The name carries the idea. One ant is small; a colony moves what's far bigger than itself. Any fighter knows this version of it — you step into the ring alone, but it's the gym that got you there."
+        }
+      ]
+    },
+    {},
+    {
+      "items": [
+        {
+          "type": "text",
+          "text": "Three letters, one body: A, N and T built into the shape of a single ant. The whole idea in one move — separate parts becoming one organism."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "THE MARK"
+          "type": "text",
+          "text": "Red on black — the colors of the ring. They don't calm you down, and they're not supposed to."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "TYPE & COLOR"
+          "type": "text",
+          "text": "The ant lives everywhere the colony gathers: the ring floor, the gloves, the Fight Night wall, the member cards. Every card has its own number — one of many."
         }
       ]
     },
     {
       "items": [
         {
-          "type": "heading",
-          "text": "IN THE WORLD"
-        }
-      ]
-    },
-    {
-      "items": [
-        {
-          "type": "heading",
-          "text": "THE SYSTEM"
+          "type": "text",
+          "text": "Five disciplines under one roof, and it reads as one place. What ties it together is simple: everyone here belongs to the same colony. The mark just says it out loud."
         }
       ]
     }
@@ -78,14 +79,12 @@
     {
       "name": "WHUN",
       "category": "Brand identity",
-      "url": "whun.html",
-      "image": ""
+      "url": "whun.html"
     },
     {
       "name": "Servant Barber",
       "category": "Brand identity",
-      "url": "servant-barber.html",
-      "image": ""
+      "url": "servant-barber.html"
     }
   ]
 }
