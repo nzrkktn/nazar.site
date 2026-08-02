@@ -34,10 +34,6 @@
     {
       "items": [
         {
-          "type": "text",
-          "text": "What holds it together isn't the schedule. Most gyms sell a personal result — your body, your progress, you against yourself. People stay at **ANT** because of the room they train in."
-        },
-        {
           "type": "image",
           "image": "/images/ant 18.png",
           "ratio": "3:4"
@@ -46,6 +42,10 @@
           "type": "image",
           "image": "/images/ant 19.png",
           "ratio": "3:4"
+        },
+        {
+          "type": "text",
+          "text": "What holds it together isn't the schedule. Most gyms sell a personal result — your body, your progress, you against yourself. People stay at **ANT** because of the room they train in."
         }
       ]
     },
