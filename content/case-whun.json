@@ -131,14 +131,15 @@
   ],
   "more": [
     {
-      "name": "Servant Barber",
-      "category": "Brand identity",
-      "url": "cranston-bible-chapel.html"
+      "name": "Tavitaʼs Touch",
+      "category": "Ceramic Artist",
+      "url": "https://circleburo.com/tavitas-touch.html",
+      "image": "/images/tt 1-7.png"
     },
     {
-      "name": "Ant Sport Health Academy",
-      "category": "Brand identity",
-      "url": "ant-sport-health-academy.html"
+      "name": "Servant ",
+      "category": "Barber",
+      "url": "https://circleburo.com/cranston-bible-chapel.html"
     }
   ]
 }
