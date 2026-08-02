@@ -79,12 +79,12 @@
         },
         {
           "type": "image",
-          "image": "/images/ser 13.png",
+          "image": "/images/ser 15-4.png",
           "ratio": "1:1"
         },
         {
           "type": "image",
-          "image": "/images/ser 15-4.png",
+          "image": "/images/ser 13.png",
           "ratio": "1:1"
         },
         {
@@ -98,6 +98,11 @@
         {
           "type": "text",
           "text": "Warm brown belongs to things that age well — leather, wood, coffee, an old photograph. A place that stays and remembers everyone should be the color of what time improves, not what came new out of a box."
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 18.png",
+          "ratio": "4:3"
         }
       ]
     },
