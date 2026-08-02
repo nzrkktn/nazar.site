@@ -60,6 +60,11 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/ant 21.png",
+          "ratio": "4:3"
+        },
+        {
           "type": "text",
           "text": "Five disciplines, one place. What ties it together is simple: everyone here belongs to the same colony."
         }
