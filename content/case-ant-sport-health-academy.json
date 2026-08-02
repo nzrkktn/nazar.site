@@ -1,6 +1,6 @@
 {
   "title": "Ant",
-  "intro": "Weights, fitness, Muay Thai, boxing, kickboxing — all under one roof. The name explains why it doesn't fall apart into a list.",
+  "intro": "Weights, fitness, Muay Thai, boxing, kickboxing — all under one roof, held together by one idea.",
   "meta": {
     "year": "2023",
     "scope": "Positioning, Brand identity",
@@ -13,6 +13,7 @@
       "items": [
         {
           "type": "image",
+          "image": "/images/ant 2.png",
           "ratio": "1:1"
         }
       ]
@@ -21,7 +22,10 @@
       "items": [
         {
           "type": "text",
-          "text": "**ANT** has a weights floor, fitness training, and an academy of Muay Thai, boxing and kickboxing. On paper that's a list of services — the kind of gym that's usually about everything and about nothing."
+          "text": "**Ant** is a gym with five disciplines under one roof. On paper that's a list of services — but people stay here because of the room, not the schedule. One ant is small; a colony moves what's bigger than itself. A fighter knows this: you step into the ring alone, but it's the gym that got you there."
+        },
+        {
+          "type": "image"
         }
       ]
     },
