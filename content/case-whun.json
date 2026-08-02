@@ -131,16 +131,16 @@
   ],
   "more": [
     {
-      "name": "Tavitaʼs Touch",
-      "category": "Ceramic Artist",
-      "url": "https://circleburo.com/tavitas-touch.html",
-      "image": "/images/tt 1-7.png"
-    },
-    {
       "name": "Servant ",
       "category": "Barber",
       "url": "https://circleburo.com/servant-barber.html",
       "image": "/images/ser 12-3.png"
+    },
+    {
+      "name": "Ant",
+      "category": "Academy",
+      "url": "https://circleburo.com/ant-sport-health-academy.html",
+      "image": "/images/Ant 13-1.png"
     }
   ]
 }
