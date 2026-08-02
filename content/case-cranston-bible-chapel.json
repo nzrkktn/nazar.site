@@ -96,13 +96,13 @@
     {
       "items": [
         {
-          "type": "text",
-          "text": "Warm brown belongs to things that age well — leather, wood, coffee, an old photograph. A place that stays and remembers everyone should be the color of what time improves, not what came new out of a box."
+          "type": "image",
+          "image": "/images/ser 19.png",
+          "ratio": "4:3"
         },
         {
-          "type": "image",
-          "image": "/images/ser 18.png",
-          "ratio": "4:3"
+          "type": "text",
+          "text": "Warm brown belongs to things that age well — leather, wood, coffee, an old photograph. A place that stays and remembers everyone should be the color of what time improves, not what came new out of a box."
         }
       ]
     },
