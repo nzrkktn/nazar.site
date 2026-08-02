@@ -101,14 +101,16 @@
   ],
   "more": [
     {
-      "name": "WHUN",
-      "category": "Brand identity",
-      "url": "whun.html"
+      "name": "Tavitaʼs Touch",
+      "category": "Ceramic Artist",
+      "url": "https://circleburo.com/tavitas-touch.html",
+      "image": "/images/tt 1-8.png"
     },
     {
-      "name": "Servant Barber",
-      "category": "Brand identity",
-      "url": "servant-barber.html"
+      "name": "WHUN?",
+      "category": "Clothing Brand",
+      "url": "https://circleburo.com/whun.html",
+      "image": "/images/w 9-2.png"
     }
   ]
 }
