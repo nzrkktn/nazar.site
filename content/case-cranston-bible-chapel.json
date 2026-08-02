@@ -40,20 +40,12 @@
       "items": [
         {
           "type": "image",
-          "image": "/images/ser 7.png",
+          "image": "/images/ser 15.png",
           "ratio": "1:1"
         },
         {
           "type": "text",
           "text": "Servant is *serve* and *ant* together: to serve, and Anton. The name holds both at once — the work itself, and the person doing it."
-        }
-      ]
-    },
-    {
-      "items": [
-        {
-          "type": "text",
-          "text": "More clients came, the approach stayed the same. At most barbershops you start over every time — explain the fade you want, keep up the small talk. Here they already know you, and they know your cut."
         }
       ]
     },
@@ -77,6 +69,9 @@
     },
     {
       "items": [
+        {
+          "type": "image"
+        },
         {
           "type": "text",
           "text": "A classic barbershop serif — the vocabulary of a real trade, not a new arrival. It doesn't read as a master showing off, but as a sign of a place that has been here long enough to know everyone."
