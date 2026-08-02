@@ -52,6 +52,34 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/Ant 22 (1).png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "image",
+          "image": "/images/Ant 23 (1).png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "break"
+        },
+        {
+          "type": "image",
+          "image": "/images/Ant 24 (1).png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/Ant 26 (1).png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/Ant 25 (1).png",
+          "ratio": "3:4"
+        },
+        {
           "type": "text",
           "text": "The ant lives everywhere the colony gathers — the ring floor, the gloves, the member cards. Every card has its own number: one of many."
         }
