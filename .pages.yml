@@ -456,10 +456,10 @@ content:
             label: Зображення
             type: image
 
-  - name: case_cranston
-    label: Кейс — Cranston Bible Chapel
+  - name: case_servant_barber
+    label: Кейс — Servant Barber
     type: file
-    path: content/case-cranston-bible-chapel.json
+    path: content/case-servant-barber.json
     format: json
     fields:
       - name: title
