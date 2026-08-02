@@ -148,14 +148,16 @@
   ],
   "more": [
     {
-      "name": "WHUN",
-      "category": "Brand identity",
-      "url": "whun.html"
+      "name": "Tavitaʼs Touch",
+      "category": "Ceramic Artist",
+      "url": "https://circleburo.com/tavitas-touch.html",
+      "image": "/images/tt 1-6.png"
     },
     {
-      "name": "Ant Sport Health Academy",
-      "category": "Brand identity",
-      "url": "ant-sport-health-academy.html"
+      "name": "WHUN?",
+      "category": "Clothing Brand",
+      "url": "https://circleburo.com/whun.html",
+      "image": "/images/w 9-1.png"
     }
   ]
 }
