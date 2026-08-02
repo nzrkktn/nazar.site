@@ -122,6 +122,24 @@
     {
       "items": [
         {
+          "type": "image",
+          "image": "/images/ser 19-1.png",
+          "ratio": "4:3"
+        },
+        {
+          "type": "break"
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 22.png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "image",
+          "image": "/images/ChatGPT Image Aug 1 2026 (15)-1.png",
+          "ratio": "1:1"
+        },
+        {
           "type": "text",
           "text": "Servant didn't invent a value, it kept one: cut a client the way you'd cut a friend, without starting from zero. Everything else — the mark, the color, the words — just holds that in place."
         }
