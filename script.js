@@ -229,6 +229,38 @@
       }
     }
 
+    // — contact: "Get in touch" opens a pre-filled email to the site owner —
+    const contactBtn = document.querySelector('[data-contact-submit]');
+    if (contactBtn && !contactBtn.dataset.wired) {
+      contactBtn.dataset.wired = '1';
+      contactBtn.addEventListener('click', e => {
+        e.preventDefault();
+        const grid = contactBtn.closest('.page-body').querySelector('.form-grid');
+        const name = grid.querySelector('[name="name"]').value.trim();
+        const email = grid.querySelector('[name="email"]').value.trim();
+        const business = grid.querySelector('[name="business"]').value.trim();
+        const tier = grid.querySelector('[data-tier-select]').value;
+        const message = grid.querySelector('[name="message"]').value.trim();
+
+        if (!name || !email) {
+          (name ? grid.querySelector('[name="email"]') : grid.querySelector('[name="name"]')).focus();
+          return;
+        }
+
+        const to = (C.site && C.site.email) || 'nzrkktn@gmail.com';
+        const subject = `New inquiry from ${name}`;
+        const body = [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Business: ${business}`,
+          `Starting point: ${tier}`,
+          '',
+          message
+        ].join('\n');
+        window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    }
+
     // — case page: an author-ordered list of blocks, each holding an
     // author-ordered list of heading/text/image/video/gif items — drag-
     // reorder in Pages CMS decides how many blocks there are, what order
