@@ -70,7 +70,22 @@
     {
       "items": [
         {
-          "type": "image"
+          "type": "image",
+          "image": "/images/ser 7-1.png",
+          "ratio": "1:1"
+        },
+        {
+          "type": "break"
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 5-2.png",
+          "ratio": "3:4"
+        },
+        {
+          "type": "image",
+          "image": "/images/ser 14.png",
+          "ratio": "3:4"
         },
         {
           "type": "text",
