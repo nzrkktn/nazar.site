@@ -693,10 +693,9 @@ video.case-media { display: block; width: 100%; height: 100%; object-fit: cover;
   .contact-info { display: none; }
   .contact-info-mobile {
     display: flex; justify-content: space-between;
-    margin-top: 16px;
-    padding: 0 var(--pad);
+    position: absolute; left: var(--panel-inset); right: var(--panel-inset); bottom: var(--panel-inset); z-index: 3;
     font-size: 0.92rem;
-    color: var(--grey);
+    color: rgba(255,255,255,0.92);
   }
   /* equalize the photo -> nav -> badge -> headline rhythm to match the
      smallest of the three (the .content top padding, ~28px) */
