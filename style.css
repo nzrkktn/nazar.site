@@ -135,8 +135,8 @@ img { display: block; max-width: 100%; }
 .panel-logo img { display: block; height: 44px; width: auto; }
 .topnav > .site-logo { display: none; }
 
-/* About's mobile crop puts this corner over a bright window in the photo,
-   where the white mark disappears — swap to the black mark there only */
+/* some mobile panel crops put this corner over a bright window in the
+   photo, where the white mark disappears — swap to the black mark there only */
 .panel-logo .pl-black { display: none; }
 
 /* pages without a photo panel (Services) still need the logo somewhere —
@@ -488,6 +488,8 @@ body:not(.projects-page) a.slide-link:focus-visible .slide-logo {
 .contact-info .k { font-size: 0.78rem; opacity: 0.7; margin-bottom: 4px; }
 .contact-info .v { font-size: 0.98rem; }
 
+.contact-info-mobile { display: none; }
+
 /* ——————— CASE (Bungee model) ——————— */
 
 .case { max-width: 1280px; margin: 0 auto; padding: clamp(28px,3vw,44px) var(--pad) 0; }
@@ -686,8 +688,16 @@ video.case-media { display: block; width: 100%; height: 100%; object-fit: cover;
   :root { --panel-inset: 20px; }
   .panel-logo img, .page-logo img { height: 30px; }
   .panel-topbar .panel-theme-btn { display: grid; }
-  .about-panel-logo .pl-white { display: none; }
-  .about-panel-logo .pl-black { display: block; }
+  .panel-logo-swap .pl-white { display: none; }
+  .panel-logo-swap .pl-black { display: block; }
+  .contact-info { display: none; }
+  .contact-info-mobile {
+    display: flex; justify-content: space-between;
+    margin-top: 16px;
+    padding: 0 var(--pad);
+    font-size: 0.92rem;
+    color: var(--grey);
+  }
   /* equalize the photo -> nav -> badge -> headline rhythm to match the
      smallest of the three (the .content top padding, ~28px) */
   .hero-block { margin-top: 0; }
