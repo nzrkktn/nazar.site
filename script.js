@@ -247,9 +247,6 @@
           return;
         }
 
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'generate_lead', tier });
-
         const to = (C.site && C.site.email) || 'nzrkktn@gmail.com';
         const subject = `New inquiry from ${name}${business ? ' — ' + business : ''}`;
         const divider = '────────────────────';
@@ -275,7 +272,15 @@
           divider,
           'Sent from the contact form on circleburo.com'
         ].join('\n');
-        window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // give GTM a moment to actually send the hit before the browser's
+        // mailto permission prompt suspends the tab — open() either way
+        let opened = false;
+        const open = () => { if (!opened) { opened = true; window.location.href = mailto; } };
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'generate_lead', tier, eventCallback: open, eventTimeout: 500 });
+        setTimeout(open, 500);
       });
     }
 
