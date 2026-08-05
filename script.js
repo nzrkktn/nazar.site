@@ -247,6 +247,9 @@
           return;
         }
 
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'generate_lead', tier });
+
         const to = (C.site && C.site.email) || 'nzrkktn@gmail.com';
         const subject = `New inquiry from ${name}${business ? ' — ' + business : ''}`;
         const divider = '────────────────────';
